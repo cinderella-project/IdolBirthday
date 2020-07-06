@@ -20,7 +20,7 @@ public struct IdolManager {
                                             .rdfsLabel(is: .init("name"))
 //                                            .schemaName(is: .init("name"))
                                             .schemaBirthDate(is: .init("birthDate"))
-                                            .imasColor(is: .init("color"))
+                                            .optional { $0.imasColor(is: .init("color")) }
                                             .triples),
                            order: [.asc(v: .init("birthDate"))])
     }

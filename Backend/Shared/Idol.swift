@@ -16,7 +16,9 @@ public struct Idol: Decodable {
     public init(from decoder: Decoder) throws {
         self.name = try decoder.container(keyedBy: CodingKeys.self).decode(String.self, forKey: .name)
         self.birthDate = RDFBirthDate(string: try decoder.container(keyedBy: CodingKeys.self).decode(String.self, forKey: .birthDate))!
-        if let rgb = Int(try decoder.container(keyedBy: CodingKeys.self).decode(String.self, forKey: .color), radix: 16) {
+        if  let rgbString = try decoder.container(keyedBy: CodingKeys.self).decodeIfPresent(String.self, forKey: .color),
+            let rgb = Int(rgbString, radix: 16)
+        {
             let r = 0xFF & (rgb >> 16)
             let g = 0xFF & (rgb >> 8)
             let b = 0xFF & (rgb)
