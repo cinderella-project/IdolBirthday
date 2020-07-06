@@ -99,7 +99,7 @@ struct IdolBirthdayWidgetEntryView : View {
                     Text(entry.date, style: .date)
                 }
                 ForEach(entry.todayIdols) {
-                    IdolView(idol: $0)
+                    IdolView(idol: $0, showDate: false)
                 }
                 if entry.idols.count > 0 {
                     HStack {
