@@ -21,6 +21,7 @@ public struct IdolManager {
 //                                            .schemaName(is: .init("name"))
                                             .schemaBirthDate(is: .init("birthDate"))
                                             .optional { $0.imasColor(is: .init("color")) }
+                                            .optional { $0.imasIdolListURL(is: .init("idolListURL")) }
                                             .triples),
                            order: [.asc(v: .init("birthDate"))])
     }

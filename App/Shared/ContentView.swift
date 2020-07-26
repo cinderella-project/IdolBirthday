@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import IdolBirthdayBackend
+import Backend
 import Combine
 
 final class ContentViewModel: ObservableObject, Identifiable {

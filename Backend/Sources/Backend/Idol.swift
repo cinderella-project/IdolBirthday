@@ -11,11 +11,16 @@ import SwiftUI
 public struct Idol: Decodable {
     public var name: String
     public var birthDate: RDFBirthDate
+    public var idolListURL: URL?
     public var color: Color?
     
     public init(from decoder: Decoder) throws {
-        self.name = try decoder.container(keyedBy: CodingKeys.self).decode(String.self, forKey: .name)
-        self.birthDate = RDFBirthDate(string: try decoder.container(keyedBy: CodingKeys.self).decode(String.self, forKey: .birthDate))!
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.birthDate = RDFBirthDate(string: try container.decode(String.self, forKey: .birthDate))!
+        if let urlString = try container.decodeIfPresent(String.self, forKey: .idolListURL) {
+            self.idolListURL = URL(string: urlString)
+        }
         if  let rgbString = try decoder.container(keyedBy: CodingKeys.self).decodeIfPresent(String.self, forKey: .color),
             let rgb = Int(rgbString, radix: 16)
         {
@@ -29,6 +34,7 @@ public struct Idol: Decodable {
     enum CodingKeys: String, CodingKey {
         case name
         case birthDate
+        case idolListURL
         case color
     }
 }

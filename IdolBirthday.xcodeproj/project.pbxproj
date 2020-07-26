@@ -22,19 +22,6 @@
 		CE4137A224A18DB400201DC9 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
 		CE4137A324A18DB400201DC9 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
 		CE4137A624A18DB400201DC9 /* IdolBirthdayWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE41379524A18DB200201DC9 /* IdolBirthdayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		CE4137AD24A194FE00201DC9 /* SwiftSparql in Frameworks */ = {isa = PBXBuildFile; productRef = CE4137AC24A194FE00201DC9 /* SwiftSparql */; };
-		CE50983F24A454EF00D6A948 /* Idol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50983E24A454EF00D6A948 /* Idol.swift */; };
-		CE50984124A45EC200D6A948 /* RDFBirthDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50984024A45EC200D6A948 /* RDFBirthDate.swift */; };
-		CE50984424A461C600D6A948 /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = CE50984324A461C600D6A948 /* Regex */; };
-		CE50985324A476BE00D6A948 /* IdolBirthdayBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE50984A24A476BD00D6A948 /* IdolBirthdayBackend.framework */; };
-		CE50985F24A476BE00D6A948 /* IdolBirthdayBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE50984A24A476BD00D6A948 /* IdolBirthdayBackend.framework */; };
-		CE50986024A476BE00D6A948 /* IdolBirthdayBackend.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE50984A24A476BD00D6A948 /* IdolBirthdayBackend.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE50986824A476DB00D6A948 /* Idol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50983E24A454EF00D6A948 /* Idol.swift */; };
-		CE50986924A476DB00D6A948 /* IdolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECEA24024A27C98008E2070 /* IdolManager.swift */; };
-		CE50986A24A476DB00D6A948 /* RDFBirthDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50984024A45EC200D6A948 /* RDFBirthDate.swift */; };
-		CE50986B24A476DD00D6A948 /* IdolBirthdayBackend.h in Headers */ = {isa = PBXBuildFile; fileRef = CECEA22324A27C2A008E2070 /* IdolBirthdayBackend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE50986D24A4771000D6A948 /* SwiftSparql in Frameworks */ = {isa = PBXBuildFile; productRef = CE50986C24A4771000D6A948 /* SwiftSparql */; };
-		CE50986F24A4771000D6A948 /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = CE50986E24A4771000D6A948 /* Regex */; };
 		CE50987B24A4808000D6A948 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE41379724A18DB200201DC9 /* WidgetKit.framework */; };
 		CE50987C24A4808000D6A948 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE41379924A18DB200201DC9 /* SwiftUI.framework */; };
 		CE50988924A4808200D6A948 /* IdolBirthdayWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE50987A24A4808000D6A948 /* IdolBirthdayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -42,13 +29,10 @@
 		CE50989024A481A500D6A948 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
 		CE50989124A481A900D6A948 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
 		CE50989224A481B500D6A948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE41379F24A18DB400201DC9 /* Assets.xcassets */; };
-		CECEA22A24A27C2A008E2070 /* IdolBirthdayBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECEA22124A27C2A008E2070 /* IdolBirthdayBackend.framework */; };
-		CECEA23124A27C2A008E2070 /* IdolBirthdayBackendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECEA23024A27C2A008E2070 /* IdolBirthdayBackendTests.swift */; };
-		CECEA23324A27C2A008E2070 /* IdolBirthdayBackend.h in Headers */ = {isa = PBXBuildFile; fileRef = CECEA22324A27C2A008E2070 /* IdolBirthdayBackend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CECEA23624A27C2A008E2070 /* IdolBirthdayBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECEA22124A27C2A008E2070 /* IdolBirthdayBackend.framework */; };
-		CECEA23724A27C2A008E2070 /* IdolBirthdayBackend.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECEA22124A27C2A008E2070 /* IdolBirthdayBackend.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CECEA24124A27C98008E2070 /* IdolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECEA24024A27C98008E2070 /* IdolManager.swift */; };
-		CECEA24324A27CB2008E2070 /* SwiftSparql in Frameworks */ = {isa = PBXBuildFile; productRef = CECEA24224A27CB2008E2070 /* SwiftSparql */; };
+		CE6EE4AA24CD5D4000672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4A924CD5D4000672426 /* Backend */; };
+		CE6EE4AC24CD5D4C00672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AB24CD5D4C00672426 /* Backend */; };
+		CE6EE4AE24CD5D6700672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AD24CD5D6700672426 /* Backend */; };
+		CE6EE4B024CD5D6B00672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AF24CD5D6B00672426 /* Backend */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,54 +57,12 @@
 			remoteGlobalIDString = CE41379424A18DB200201DC9;
 			remoteInfo = IdolBirthdayWidgetExtension;
 		};
-		CE50985424A476BE00D6A948 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE41374F24A18CE700201DC9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE50984924A476BD00D6A948;
-			remoteInfo = IdolBirthdayBackend;
-		};
-		CE50985624A476BE00D6A948 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE41374F24A18CE700201DC9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE41376224A18CE900201DC9;
-			remoteInfo = macOS;
-		};
-		CE50985D24A476BE00D6A948 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE41374F24A18CE700201DC9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE50984924A476BD00D6A948;
-			remoteInfo = IdolBirthdayBackend;
-		};
 		CE50988724A4808200D6A948 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE41374F24A18CE700201DC9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CE50987924A4808000D6A948;
 			remoteInfo = IdolBirthdayWidgetExtension;
-		};
-		CECEA22B24A27C2A008E2070 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE41374F24A18CE700201DC9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CECEA22024A27C2A008E2070;
-			remoteInfo = IdolBirthdayBackend;
-		};
-		CECEA22D24A27C2A008E2070 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE41374F24A18CE700201DC9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE41375A24A18CE900201DC9;
-			remoteInfo = iOS;
-		};
-		CECEA23424A27C2A008E2070 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE41374F24A18CE700201DC9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CECEA22024A27C2A008E2070;
-			remoteInfo = IdolBirthdayBackend;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -142,7 +84,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE50986024A476BE00D6A948 /* IdolBirthdayBackend.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,7 +105,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CECEA23724A27C2A008E2070 /* IdolBirthdayBackend.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,21 +133,10 @@
 		CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = IdolBirthdayWidget.intentdefinition; sourceTree = "<group>"; };
 		CE41379F24A18DB400201DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4137A124A18DB400201DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE50983E24A454EF00D6A948 /* Idol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idol.swift; sourceTree = "<group>"; };
-		CE50984024A45EC200D6A948 /* RDFBirthDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDFBirthDate.swift; sourceTree = "<group>"; };
-		CE50984A24A476BD00D6A948 /* IdolBirthdayBackend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdolBirthdayBackend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE50985224A476BD00D6A948 /* IdolBirthdayBackendTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IdolBirthdayBackendTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE50987224A4774A00D6A948 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE50987A24A4808000D6A948 /* IdolBirthdayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IdolBirthdayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE50988324A4808200D6A948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE50988424A4808200D6A948 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		CECEA22124A27C2A008E2070 /* IdolBirthdayBackend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdolBirthdayBackend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CECEA22324A27C2A008E2070 /* IdolBirthdayBackend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdolBirthdayBackend.h; sourceTree = "<group>"; };
-		CECEA22424A27C2A008E2070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CECEA22924A27C2A008E2070 /* IdolBirthdayBackendTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IdolBirthdayBackendTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CECEA23024A27C2A008E2070 /* IdolBirthdayBackendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolBirthdayBackendTests.swift; sourceTree = "<group>"; };
-		CECEA23224A27C2A008E2070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CECEA24024A27C98008E2070 /* IdolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolManager.swift; sourceTree = "<group>"; };
+		CE6EE4A824CD5CC400672426 /* Backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Backend; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECEA23624A27C2A008E2070 /* IdolBirthdayBackend.framework in Frameworks */,
+				CE6EE4AA24CD5D4000672426 /* Backend in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE50985F24A476BE00D6A948 /* IdolBirthdayBackend.framework in Frameworks */,
+				CE6EE4AC24CD5D4C00672426 /* Backend in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,25 +175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE41379A24A18DB200201DC9 /* SwiftUI.framework in Frameworks */,
-				CE4137AD24A194FE00201DC9 /* SwiftSparql in Frameworks */,
 				CE41379824A18DB200201DC9 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE50984724A476BD00D6A948 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE50986F24A4771000D6A948 /* Regex in Frameworks */,
-				CE50986D24A4771000D6A948 /* SwiftSparql in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE50984F24A476BD00D6A948 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE50985324A476BE00D6A948 /* IdolBirthdayBackend.framework in Frameworks */,
+				CE6EE4AE24CD5D6700672426 /* Backend in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,25 +184,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6EE4B024CD5D6B00672426 /* Backend in Frameworks */,
 				CE50987C24A4808000D6A948 /* SwiftUI.framework in Frameworks */,
 				CE50987B24A4808000D6A948 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECEA21E24A27C2A008E2070 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE50984424A461C600D6A948 /* Regex in Frameworks */,
-				CECEA24324A27CB2008E2070 /* SwiftSparql in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECEA22624A27C2A008E2070 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CECEA22A24A27C2A008E2070 /* IdolBirthdayBackend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,8 +196,8 @@
 		CE41374E24A18CE700201DC9 = {
 			isa = PBXGroup;
 			children = (
+				CE6EE4A824CD5CC400672426 /* Backend */,
 				CE50987424A4805600D6A948 /* App */,
-				CECEA23F24A27C33008E2070 /* Backend */,
 				CE41379B24A18DB200201DC9 /* Widget */,
 				CE41379624A18DB200201DC9 /* Frameworks */,
 				CE41375C24A18CE900201DC9 /* Products */,
@@ -326,10 +222,6 @@
 				CE41376B24A18CE900201DC9 /* Tests iOS.xctest */,
 				CE41377624A18CE900201DC9 /* Tests macOS.xctest */,
 				CE41379524A18DB200201DC9 /* IdolBirthdayWidgetExtension.appex */,
-				CECEA22124A27C2A008E2070 /* IdolBirthdayBackend.framework */,
-				CECEA22924A27C2A008E2070 /* IdolBirthdayBackendTests iOS.xctest */,
-				CE50984A24A476BD00D6A948 /* IdolBirthdayBackend.framework */,
-				CE50985224A476BD00D6A948 /* IdolBirthdayBackendTests macOS.xctest */,
 				CE50987A24A4808000D6A948 /* IdolBirthdayWidgetExtension.appex */,
 			);
 			name = Products;
@@ -389,22 +281,6 @@
 			path = Widget;
 			sourceTree = "<group>";
 		};
-		CE50987024A4773000D6A948 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CECEA22424A27C2A008E2070 /* Info.plist */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		CE50987124A4773400D6A948 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				CE50987224A4774A00D6A948 /* Info.plist */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		CE50987424A4805600D6A948 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,57 +320,7 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		CECEA22224A27C2A008E2070 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				CECEA22324A27C2A008E2070 /* IdolBirthdayBackend.h */,
-				CECEA24024A27C98008E2070 /* IdolManager.swift */,
-				CE50983E24A454EF00D6A948 /* Idol.swift */,
-				CE50984024A45EC200D6A948 /* RDFBirthDate.swift */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		CECEA22F24A27C2A008E2070 /* iOS Tests */ = {
-			isa = PBXGroup;
-			children = (
-				CECEA23024A27C2A008E2070 /* IdolBirthdayBackendTests.swift */,
-				CECEA23224A27C2A008E2070 /* Info.plist */,
-			);
-			path = "iOS Tests";
-			sourceTree = "<group>";
-		};
-		CECEA23F24A27C33008E2070 /* Backend */ = {
-			isa = PBXGroup;
-			children = (
-				CECEA22224A27C2A008E2070 /* Shared */,
-				CE50987024A4773000D6A948 /* iOS */,
-				CE50987124A4773400D6A948 /* macOS */,
-				CECEA22F24A27C2A008E2070 /* iOS Tests */,
-			);
-			path = Backend;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		CE50984524A476BD00D6A948 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE50986B24A476DD00D6A948 /* IdolBirthdayBackend.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECEA21C24A27C2A008E2070 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CECEA23324A27C2A008E2070 /* IdolBirthdayBackend.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CE41375A24A18CE900201DC9 /* iOS */ = {
@@ -511,9 +337,11 @@
 			);
 			dependencies = (
 				CE4137A524A18DB400201DC9 /* PBXTargetDependency */,
-				CECEA23524A27C2A008E2070 /* PBXTargetDependency */,
 			);
 			name = iOS;
+			packageProductDependencies = (
+				CE6EE4A924CD5D4000672426 /* Backend */,
+			);
 			productName = iOS;
 			productReference = CE41375B24A18CE900201DC9 /* IdolBirthday.app */;
 			productType = "com.apple.product-type.application";
@@ -531,10 +359,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				CE50985E24A476BE00D6A948 /* PBXTargetDependency */,
 				CE50988824A4808200D6A948 /* PBXTargetDependency */,
 			);
 			name = macOS;
+			packageProductDependencies = (
+				CE6EE4AB24CD5D4C00672426 /* Backend */,
+			);
 			productName = macOS;
 			productReference = CE41376324A18CE900201DC9 /* IdolBirthday.app */;
 			productType = "com.apple.product-type.application";
@@ -589,52 +419,11 @@
 			);
 			name = "IdolBirthdayWidgetExtension iOS";
 			packageProductDependencies = (
-				CE4137AC24A194FE00201DC9 /* SwiftSparql */,
+				CE6EE4AD24CD5D6700672426 /* Backend */,
 			);
 			productName = IdolBirthdayWidgetExtension;
 			productReference = CE41379524A18DB200201DC9 /* IdolBirthdayWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
-		};
-		CE50984924A476BD00D6A948 /* IdolBirthdayBackend macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE50986124A476BE00D6A948 /* Build configuration list for PBXNativeTarget "IdolBirthdayBackend macOS" */;
-			buildPhases = (
-				CE50984524A476BD00D6A948 /* Headers */,
-				CE50984624A476BD00D6A948 /* Sources */,
-				CE50984724A476BD00D6A948 /* Frameworks */,
-				CE50984824A476BD00D6A948 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "IdolBirthdayBackend macOS";
-			packageProductDependencies = (
-				CE50986C24A4771000D6A948 /* SwiftSparql */,
-				CE50986E24A4771000D6A948 /* Regex */,
-			);
-			productName = IdolBirthdayBackend;
-			productReference = CE50984A24A476BD00D6A948 /* IdolBirthdayBackend.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CE50985124A476BD00D6A948 /* IdolBirthdayBackendTests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE50986524A476BE00D6A948 /* Build configuration list for PBXNativeTarget "IdolBirthdayBackendTests macOS" */;
-			buildPhases = (
-				CE50984E24A476BD00D6A948 /* Sources */,
-				CE50984F24A476BD00D6A948 /* Frameworks */,
-				CE50985024A476BD00D6A948 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE50985524A476BE00D6A948 /* PBXTargetDependency */,
-				CE50985724A476BE00D6A948 /* PBXTargetDependency */,
-			);
-			name = "IdolBirthdayBackendTests macOS";
-			productName = IdolBirthdayBackendTests;
-			productReference = CE50985224A476BD00D6A948 /* IdolBirthdayBackendTests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CE50987924A4808000D6A948 /* IdolBirthdayWidgetExtension macOS */ = {
 			isa = PBXNativeTarget;
@@ -649,50 +438,12 @@
 			dependencies = (
 			);
 			name = "IdolBirthdayWidgetExtension macOS";
+			packageProductDependencies = (
+				CE6EE4AF24CD5D6B00672426 /* Backend */,
+			);
 			productName = IdolBirthdayWidgetExtension;
 			productReference = CE50987A24A4808000D6A948 /* IdolBirthdayWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
-		};
-		CECEA22024A27C2A008E2070 /* IdolBirthdayBackend iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CECEA23D24A27C2A008E2070 /* Build configuration list for PBXNativeTarget "IdolBirthdayBackend iOS" */;
-			buildPhases = (
-				CECEA21C24A27C2A008E2070 /* Headers */,
-				CECEA21D24A27C2A008E2070 /* Sources */,
-				CECEA21E24A27C2A008E2070 /* Frameworks */,
-				CECEA21F24A27C2A008E2070 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "IdolBirthdayBackend iOS";
-			packageProductDependencies = (
-				CECEA24224A27CB2008E2070 /* SwiftSparql */,
-				CE50984324A461C600D6A948 /* Regex */,
-			);
-			productName = IdolBirthdayBackend;
-			productReference = CECEA22124A27C2A008E2070 /* IdolBirthdayBackend.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CECEA22824A27C2A008E2070 /* IdolBirthdayBackendTests iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CECEA23E24A27C2A008E2070 /* Build configuration list for PBXNativeTarget "IdolBirthdayBackendTests iOS" */;
-			buildPhases = (
-				CECEA22524A27C2A008E2070 /* Sources */,
-				CECEA22624A27C2A008E2070 /* Frameworks */,
-				CECEA22724A27C2A008E2070 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CECEA22C24A27C2A008E2070 /* PBXTargetDependency */,
-				CECEA22E24A27C2A008E2070 /* PBXTargetDependency */,
-			);
-			name = "IdolBirthdayBackendTests iOS";
-			productName = IdolBirthdayBackendTests;
-			productReference = CECEA22924A27C2A008E2070 /* IdolBirthdayBackendTests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -720,23 +471,8 @@
 					CE41379424A18DB200201DC9 = {
 						CreatedOnToolsVersion = 12.0;
 					};
-					CE50984924A476BD00D6A948 = {
-						CreatedOnToolsVersion = 12.0;
-					};
-					CE50985124A476BD00D6A948 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = CE41376224A18CE900201DC9;
-					};
 					CE50987924A4808000D6A948 = {
 						CreatedOnToolsVersion = 12.0;
-					};
-					CECEA22024A27C2A008E2070 = {
-						CreatedOnToolsVersion = 12.0;
-						LastSwiftMigration = 1200;
-					};
-					CECEA22824A27C2A008E2070 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = CE41375A24A18CE900201DC9;
 					};
 				};
 			};
@@ -750,8 +486,6 @@
 			);
 			mainGroup = CE41374E24A18CE700201DC9;
 			packageReferences = (
-				CE4137AB24A194FE00201DC9 /* XCRemoteSwiftPackageReference "SwiftSparql" */,
-				CE50984224A461C600D6A948 /* XCRemoteSwiftPackageReference "Regex" */,
 			);
 			productRefGroup = CE41375C24A18CE900201DC9 /* Products */;
 			projectDirPath = "";
@@ -763,10 +497,6 @@
 				CE41377524A18CE900201DC9 /* Tests macOS */,
 				CE41379424A18DB200201DC9 /* IdolBirthdayWidgetExtension iOS */,
 				CE50987924A4808000D6A948 /* IdolBirthdayWidgetExtension macOS */,
-				CECEA22024A27C2A008E2070 /* IdolBirthdayBackend iOS */,
-				CE50984924A476BD00D6A948 /* IdolBirthdayBackend macOS */,
-				CECEA22824A27C2A008E2070 /* IdolBirthdayBackendTests iOS */,
-				CE50985124A476BD00D6A948 /* IdolBirthdayBackendTests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -810,39 +540,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE50984824A476BD00D6A948 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE50985024A476BD00D6A948 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CE50987824A4808000D6A948 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE50989224A481B500D6A948 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECEA21F24A27C2A008E2070 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECEA22724A27C2A008E2070 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,47 +596,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE50984624A476BD00D6A948 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE50986824A476DB00D6A948 /* Idol.swift in Sources */,
-				CE50986A24A476DB00D6A948 /* RDFBirthDate.swift in Sources */,
-				CE50986924A476DB00D6A948 /* IdolManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE50984E24A476BD00D6A948 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CE50987624A4808000D6A948 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE50988F24A481A500D6A948 /* IdolBirthdayWidget.swift in Sources */,
 				CE50989024A481A500D6A948 /* IdolBirthdayWidget.intentdefinition in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECEA21D24A27C2A008E2070 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CECEA24124A27C98008E2070 /* IdolManager.swift in Sources */,
-				CE50984124A45EC200D6A948 /* RDFBirthDate.swift in Sources */,
-				CE50983F24A454EF00D6A948 /* Idol.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECEA22524A27C2A008E2070 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CECEA23124A27C2A008E2070 /* IdolBirthdayBackendTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -956,40 +623,10 @@
 			target = CE41379424A18DB200201DC9 /* IdolBirthdayWidgetExtension iOS */;
 			targetProxy = CE4137A424A18DB400201DC9 /* PBXContainerItemProxy */;
 		};
-		CE50985524A476BE00D6A948 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE50984924A476BD00D6A948 /* IdolBirthdayBackend macOS */;
-			targetProxy = CE50985424A476BE00D6A948 /* PBXContainerItemProxy */;
-		};
-		CE50985724A476BE00D6A948 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE41376224A18CE900201DC9 /* macOS */;
-			targetProxy = CE50985624A476BE00D6A948 /* PBXContainerItemProxy */;
-		};
-		CE50985E24A476BE00D6A948 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE50984924A476BD00D6A948 /* IdolBirthdayBackend macOS */;
-			targetProxy = CE50985D24A476BE00D6A948 /* PBXContainerItemProxy */;
-		};
 		CE50988824A4808200D6A948 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE50987924A4808000D6A948 /* IdolBirthdayWidgetExtension macOS */;
 			targetProxy = CE50988724A4808200D6A948 /* PBXContainerItemProxy */;
-		};
-		CECEA22C24A27C2A008E2070 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CECEA22024A27C2A008E2070 /* IdolBirthdayBackend iOS */;
-			targetProxy = CECEA22B24A27C2A008E2070 /* PBXContainerItemProxy */;
-		};
-		CECEA22E24A27C2A008E2070 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE41375A24A18CE900201DC9 /* iOS */;
-			targetProxy = CECEA22D24A27C2A008E2070 /* PBXContainerItemProxy */;
-		};
-		CECEA23524A27C2A008E2070 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CECEA22024A27C2A008E2070 /* IdolBirthdayBackend iOS */;
-			targetProxy = CECEA23424A27C2A008E2070 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1332,106 +969,6 @@
 			};
 			name = Release;
 		};
-		CE50986224A476BE00D6A948 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Backend/macOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthdayBackend;
-				PRODUCT_NAME = IdolBirthdayBackend;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CE50986324A476BE00D6A948 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Backend/macOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthdayBackend;
-				PRODUCT_NAME = IdolBirthdayBackend;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CE50986624A476BE00D6A948 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4XKKKM86RN;
-				INFOPLIST_FILE = IdolBirthdayBackendTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthdayBackendTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdolBirthday.app/Contents/MacOS/IdolBirthday";
-			};
-			name = Debug;
-		};
-		CE50986724A476BE00D6A948 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4XKKKM86RN;
-				INFOPLIST_FILE = IdolBirthdayBackendTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthdayBackendTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdolBirthday.app/Contents/MacOS/IdolBirthday";
-			};
-			name = Release;
-		};
 		CE50988B24A4808200D6A948 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1447,7 +984,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthday.IdolBirthdayWidget;
 				PRODUCT_NAME = IdolBirthdayWidgetExtension;
 				SDKROOT = macosx;
@@ -1471,121 +1008,12 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthday.IdolBirthdayWidget;
 				PRODUCT_NAME = IdolBirthdayWidgetExtension;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		CECEA23924A27C2A008E2070 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4XKKKM86RN;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Backend/iOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthdayBackend;
-				PRODUCT_NAME = IdolBirthdayBackend;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CECEA23A24A27C2A008E2070 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4XKKKM86RN;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Backend/iOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthdayBackend;
-				PRODUCT_NAME = IdolBirthdayBackend;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CECEA23B24A27C2A008E2070 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4XKKKM86RN;
-				INFOPLIST_FILE = IdolBirthdayBackendTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthdayBackendTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdolBirthday.app/IdolBirthday";
-			};
-			name = Debug;
-		};
-		CECEA23C24A27C2A008E2070 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4XKKKM86RN;
-				INFOPLIST_FILE = IdolBirthdayBackendTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthdayBackendTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdolBirthday.app/IdolBirthday";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1646,24 +1074,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE50986124A476BE00D6A948 /* Build configuration list for PBXNativeTarget "IdolBirthdayBackend macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE50986224A476BE00D6A948 /* Debug */,
-				CE50986324A476BE00D6A948 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE50986524A476BE00D6A948 /* Build configuration list for PBXNativeTarget "IdolBirthdayBackendTests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE50986624A476BE00D6A948 /* Debug */,
-				CE50986724A476BE00D6A948 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		CE50988A24A4808200D6A948 /* Build configuration list for PBXNativeTarget "IdolBirthdayWidgetExtension macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1673,70 +1083,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CECEA23D24A27C2A008E2070 /* Build configuration list for PBXNativeTarget "IdolBirthdayBackend iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CECEA23924A27C2A008E2070 /* Debug */,
-				CECEA23A24A27C2A008E2070 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CECEA23E24A27C2A008E2070 /* Build configuration list for PBXNativeTarget "IdolBirthdayBackendTests iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CECEA23B24A27C2A008E2070 /* Debug */,
-				CECEA23C24A27C2A008E2070 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		CE4137AB24A194FE00201DC9 /* XCRemoteSwiftPackageReference "SwiftSparql" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/banjun/SwiftSparql";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.6.0;
-			};
-		};
-		CE50984224A461C600D6A948 /* XCRemoteSwiftPackageReference "Regex" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sharplet/Regex";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.1.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		CE4137AC24A194FE00201DC9 /* SwiftSparql */ = {
+		CE6EE4A924CD5D4000672426 /* Backend */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE4137AB24A194FE00201DC9 /* XCRemoteSwiftPackageReference "SwiftSparql" */;
-			productName = SwiftSparql;
+			productName = Backend;
 		};
-		CE50984324A461C600D6A948 /* Regex */ = {
+		CE6EE4AB24CD5D4C00672426 /* Backend */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE50984224A461C600D6A948 /* XCRemoteSwiftPackageReference "Regex" */;
-			productName = Regex;
+			productName = Backend;
 		};
-		CE50986C24A4771000D6A948 /* SwiftSparql */ = {
+		CE6EE4AD24CD5D6700672426 /* Backend */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE4137AB24A194FE00201DC9 /* XCRemoteSwiftPackageReference "SwiftSparql" */;
-			productName = SwiftSparql;
+			productName = Backend;
 		};
-		CE50986E24A4771000D6A948 /* Regex */ = {
+		CE6EE4AF24CD5D6B00672426 /* Backend */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE50984224A461C600D6A948 /* XCRemoteSwiftPackageReference "Regex" */;
-			productName = Regex;
-		};
-		CECEA24224A27CB2008E2070 /* SwiftSparql */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE4137AB24A194FE00201DC9 /* XCRemoteSwiftPackageReference "SwiftSparql" */;
-			productName = SwiftSparql;
+			productName = Backend;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
