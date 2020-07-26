@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1F468624CD81F200384202 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F468524CD81F200384202 /* AboutAppViewController.swift */; };
+		CE1F468C24CDB6E200384202 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE1F468B24CDB6E200384202 /* Settings.bundle */; };
 		CE41377024A18CE900201DC9 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41376F24A18CE900201DC9 /* Tests_iOS.swift */; };
 		CE41377B24A18CE900201DC9 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41377A24A18CE900201DC9 /* Tests_macOS.swift */; };
 		CE41377D24A18CE900201DC9 /* IdolBirthdayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41375424A18CE700201DC9 /* IdolBirthdayApp.swift */; };
@@ -33,6 +35,9 @@
 		CE6EE4AC24CD5D4C00672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AB24CD5D4C00672426 /* Backend */; };
 		CE6EE4AE24CD5D6700672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AD24CD5D6700672426 /* Backend */; };
 		CE6EE4B024CD5D6B00672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AF24CD5D6B00672426 /* Backend */; };
+		CE6EE4BA24CD71BC00672426 /* AboutAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE4B924CD71BC00672426 /* AboutAppView.swift */; };
+		CE6EE4BD24CD77E400672426 /* IdolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE4BC24CD77E400672426 /* IdolList.swift */; };
+		CE6EE4BE24CD77E400672426 /* IdolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE4BC24CD77E400672426 /* IdolList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +117,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE1F468524CD81F200384202 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		CE1F468B24CDB6E200384202 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CE41375424A18CE700201DC9 /* IdolBirthdayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolBirthdayApp.swift; sourceTree = "<group>"; };
 		CE41375524A18CE700201DC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE41375624A18CE900201DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +144,8 @@
 		CE50988324A4808200D6A948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE50988424A4808200D6A948 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		CE6EE4A824CD5CC400672426 /* Backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Backend; sourceTree = "<group>"; };
+		CE6EE4B924CD71BC00672426 /* AboutAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppView.swift; sourceTree = "<group>"; };
+		CE6EE4BC24CD77E400672426 /* IdolList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,9 +216,10 @@
 		CE41375324A18CE700201DC9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CE41375624A18CE900201DC9 /* Assets.xcassets */,
 				CE41375424A18CE700201DC9 /* IdolBirthdayApp.swift */,
 				CE41375524A18CE700201DC9 /* ContentView.swift */,
-				CE41375624A18CE900201DC9 /* Assets.xcassets */,
+				CE6EE4BC24CD77E400672426 /* IdolList.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -230,7 +240,10 @@
 		CE41375D24A18CE900201DC9 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CE6EE4B924CD71BC00672426 /* AboutAppView.swift */,
 				CE41375E24A18CE900201DC9 /* Info.plist */,
+				CE1F468524CD81F200384202 /* AboutAppViewController.swift */,
+				CE1F468B24CDB6E200384202 /* Settings.bundle */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -327,6 +340,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE41378524A18CE900201DC9 /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
+				CE1F468A24CDB6B000384202 /* ShellScript */,
 				CE41375724A18CE900201DC9 /* Sources */,
 				CE41375824A18CE900201DC9 /* Frameworks */,
 				CE41375924A18CE900201DC9 /* Resources */,
@@ -506,6 +520,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1F468C24CDB6E200384202 /* Settings.bundle in Resources */,
 				CE41378124A18CE900201DC9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,14 +565,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CE1F468A24CDB6B000384202 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nmint run mono0926/LicensePlist --output-path App/iOS/Settings.bundle\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE41375724A18CE900201DC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6EE4BA24CD71BC00672426 /* AboutAppView.swift in Sources */,
 				CE41377F24A18CE900201DC9 /* ContentView.swift in Sources */,
+				CE1F468624CD81F200384202 /* AboutAppViewController.swift in Sources */,
 				CE4137A324A18DB400201DC9 /* IdolBirthdayWidget.intentdefinition in Sources */,
 				CE41377D24A18CE900201DC9 /* IdolBirthdayApp.swift in Sources */,
+				CE6EE4BD24CD77E400672426 /* IdolList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +606,7 @@
 				CE41378024A18CE900201DC9 /* ContentView.swift in Sources */,
 				CE41377E24A18CE900201DC9 /* IdolBirthdayApp.swift in Sources */,
 				CE50989124A481A900D6A948 /* IdolBirthdayWidget.intentdefinition in Sources */,
+				CE6EE4BE24CD77E400672426 /* IdolList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

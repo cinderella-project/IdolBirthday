@@ -27,18 +27,44 @@ final class ContentViewModel: ObservableObject, Identifiable {
     }
 }
 
+fileprivate extension View {
+    func iOSOnly<T: View>(_ callback: (Self) -> T) -> some View {
+        #if os(iOS)
+        return callback(self)
+        #else
+        return self
+        #endif
+    }
+}
+
 struct ContentView: View {
     @ObservedObject var viewModel: ContentViewModel = .init()
+    @State var showAboutSheet = false
     
     var body: some View {
-        List(viewModel.idols) { idol in
-            HStack {
-                Text(idol.name).foregroundColor(idol.color)
-                Spacer()
-                Text(idol.birthDate.next(), style: .date)
-                    .foregroundColor(.secondary)
-            }
-        }
+        let content = IdolList(idols: viewModel.idols).navigationTitle("IdolBirthday")
+        #if os(iOS)
+            return content
+                .navigationBarItems(leading: Button(action: {
+                    showAboutSheet = true
+                }, label: {
+                    Image(systemName: "info.circle").imageScale(.large)
+                }))
+                .sheet(isPresented: $showAboutSheet) {
+                    NavigationView {
+                        AboutAppView()
+                            .ignoresSafeArea()
+                            .navigationTitle("About IdolBirthday")
+                            .navigationBarItems(trailing: Button(action: {
+                                showAboutSheet = false
+                            }, label: {
+                                Text("Done")
+                            }))
+                    }
+                }
+        #else
+            return content
+        #endif
     }
 }
 
