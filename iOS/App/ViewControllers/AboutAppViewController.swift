@@ -54,6 +54,7 @@ class AboutAppViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "About IdolBirthday"
         tableView.dataSource = dataSource
         tableView.delegate = self
         var snapshot = dataSource.snapshot()

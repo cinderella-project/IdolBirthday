@@ -8,7 +8,7 @@
 import Foundation
 import Regex
 
-public struct RDFBirthDate {
+public struct RDFBirthDate: Hashable {
     public var month: UInt8
     public var day: UInt8
     

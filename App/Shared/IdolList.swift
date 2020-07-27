@@ -12,11 +12,13 @@ struct IdolList: View {
     var idols: [Idol]
     var body: some View {
         List(idols) { idol in
-            HStack {
-                Text(idol.name).foregroundColor(idol.color)
-                Spacer()
-                Text(idol.birthDate.next(), style: .date)
-                    .foregroundColor(.secondary)
+            NavigationLink(destination: IdolDetailView(idol: idol)) {
+                HStack {
+                    Text(idol.name).foregroundColor(idol.color)
+                    Spacer()
+                    Text(idol.birthDate.next(), style: .date)
+                        .foregroundColor(.secondary)
+                }
             }
         }
         .listStyle(PlainListStyle())

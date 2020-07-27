@@ -7,22 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE1F468624CD81F200384202 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F468524CD81F200384202 /* AboutAppViewController.swift */; };
-		CE1F468C24CDB6E200384202 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE1F468B24CDB6E200384202 /* Settings.bundle */; };
 		CE41377024A18CE900201DC9 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41376F24A18CE900201DC9 /* Tests_iOS.swift */; };
 		CE41377B24A18CE900201DC9 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41377A24A18CE900201DC9 /* Tests_macOS.swift */; };
-		CE41377D24A18CE900201DC9 /* IdolBirthdayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41375424A18CE700201DC9 /* IdolBirthdayApp.swift */; };
 		CE41377E24A18CE900201DC9 /* IdolBirthdayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41375424A18CE700201DC9 /* IdolBirthdayApp.swift */; };
-		CE41377F24A18CE900201DC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41375524A18CE700201DC9 /* ContentView.swift */; };
 		CE41378024A18CE900201DC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41375524A18CE700201DC9 /* ContentView.swift */; };
-		CE41378124A18CE900201DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE41375624A18CE900201DC9 /* Assets.xcassets */; };
 		CE41378224A18CE900201DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE41375624A18CE900201DC9 /* Assets.xcassets */; };
 		CE41379824A18DB200201DC9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE41379724A18DB200201DC9 /* WidgetKit.framework */; };
 		CE41379A24A18DB200201DC9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE41379924A18DB200201DC9 /* SwiftUI.framework */; };
 		CE41379D24A18DB300201DC9 /* IdolBirthdayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41379C24A18DB300201DC9 /* IdolBirthdayWidget.swift */; };
 		CE4137A024A18DB400201DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE41379F24A18DB400201DC9 /* Assets.xcassets */; };
 		CE4137A224A18DB400201DC9 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
-		CE4137A324A18DB400201DC9 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
 		CE4137A624A18DB400201DC9 /* IdolBirthdayWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE41379524A18DB200201DC9 /* IdolBirthdayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CE50987B24A4808000D6A948 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE41379724A18DB200201DC9 /* WidgetKit.framework */; };
 		CE50987C24A4808000D6A948 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE41379924A18DB200201DC9 /* SwiftUI.framework */; };
@@ -35,9 +29,17 @@
 		CE6EE4AC24CD5D4C00672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AB24CD5D4C00672426 /* Backend */; };
 		CE6EE4AE24CD5D6700672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AD24CD5D6700672426 /* Backend */; };
 		CE6EE4B024CD5D6B00672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AF24CD5D6B00672426 /* Backend */; };
-		CE6EE4BA24CD71BC00672426 /* AboutAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE4B924CD71BC00672426 /* AboutAppView.swift */; };
-		CE6EE4BD24CD77E400672426 /* IdolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE4BC24CD77E400672426 /* IdolList.swift */; };
 		CE6EE4BE24CD77E400672426 /* IdolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE4BC24CD77E400672426 /* IdolList.swift */; };
+		CE9025C824CE12D100754A49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9AD81624CDED5B0049E434 /* LaunchScreen.storyboard */; };
+		CE9AD83E24CDF1670049E434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD80D24CDED590049E434 /* SceneDelegate.swift */; };
+		CE9AD83F24CDF1670049E434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD80B24CDED590049E434 /* AppDelegate.swift */; };
+		CE9AD84024CDF16E0049E434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9AD81124CDED5B0049E434 /* Assets.xcassets */; };
+		CE9AD84324CDF2730049E434 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD84224CDF2730049E434 /* RootViewController.swift */; };
+		CE9AD84524CDF7E00049E434 /* IdolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD84424CDF7E00049E434 /* IdolListViewController.swift */; };
+		CE9AD84824CDF8E90049E434 /* UITableViewDiffableDataSource+plainSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD84724CDF8E90049E434 /* UITableViewDiffableDataSource+plainSnapshot.swift */; };
+		CE9AD84924CDFE760049E434 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F468524CD81F200384202 /* AboutAppViewController.swift */; };
+		CE9AD84B24CDFF6B0049E434 /* IdolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD84A24CDFF6B0049E434 /* IdolViewController.swift */; };
+		CE9AD84E24CE103E0049E434 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,12 +120,11 @@
 
 /* Begin PBXFileReference section */
 		CE1F468524CD81F200384202 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
-		CE1F468B24CDB6E200384202 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		CE1F468D24CDC15100384202 /* IdolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailView.swift; sourceTree = "<group>"; };
 		CE41375424A18CE700201DC9 /* IdolBirthdayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolBirthdayApp.swift; sourceTree = "<group>"; };
 		CE41375524A18CE700201DC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE41375624A18CE900201DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE41375B24A18CE900201DC9 /* IdolBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdolBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE41375E24A18CE900201DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE41376324A18CE900201DC9 /* IdolBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdolBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE41376524A18CE900201DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE41376624A18CE900201DC9 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
@@ -144,8 +145,22 @@
 		CE50988324A4808200D6A948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE50988424A4808200D6A948 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		CE6EE4A824CD5CC400672426 /* Backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Backend; sourceTree = "<group>"; };
-		CE6EE4B924CD71BC00672426 /* AboutAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppView.swift; sourceTree = "<group>"; };
 		CE6EE4BC24CD77E400672426 /* IdolList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolList.swift; sourceTree = "<group>"; };
+		CE9AD80B24CDED590049E434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE9AD80D24CDED590049E434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE9AD81124CDED5B0049E434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE9AD81724CDED5B0049E434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE9AD81924CDED5B0049E434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9AD82224CDED5B0049E434 /* IdolBirthdayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolBirthdayTests.swift; sourceTree = "<group>"; };
+		CE9AD82424CDED5B0049E434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9AD82D24CDED5B0049E434 /* IdolBirthdayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolBirthdayUITests.swift; sourceTree = "<group>"; };
+		CE9AD82F24CDED5B0049E434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9AD84224CDF2730049E434 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		CE9AD84424CDF7E00049E434 /* IdolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolListViewController.swift; sourceTree = "<group>"; };
+		CE9AD84724CDF8E90049E434 /* UITableViewDiffableDataSource+plainSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewDiffableDataSource+plainSnapshot.swift"; sourceTree = "<group>"; };
+		CE9AD84A24CDFF6B0049E434 /* IdolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolViewController.swift; sourceTree = "<group>"; };
+		CE9AD84C24CE01520049E434 /* IdolBirthday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IdolBirthday.entitlements; sourceTree = "<group>"; };
+		CE9AD84D24CE01520049E434 /* IdolBirthdayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IdolBirthdayWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +220,9 @@
 		CE41374E24A18CE700201DC9 = {
 			isa = PBXGroup;
 			children = (
+				CE9AD84D24CE01520049E434 /* IdolBirthdayWidgetExtension.entitlements */,
 				CE6EE4A824CD5CC400672426 /* Backend */,
+				CE9AD83924CDED660049E434 /* iOS */,
 				CE50987424A4805600D6A948 /* App */,
 				CE41379B24A18DB200201DC9 /* Widget */,
 				CE41379624A18DB200201DC9 /* Frameworks */,
@@ -220,6 +237,7 @@
 				CE41375424A18CE700201DC9 /* IdolBirthdayApp.swift */,
 				CE41375524A18CE700201DC9 /* ContentView.swift */,
 				CE6EE4BC24CD77E400672426 /* IdolList.swift */,
+				CE1F468D24CDC15100384202 /* IdolDetailView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -235,17 +253,6 @@
 				CE50987A24A4808000D6A948 /* IdolBirthdayWidgetExtension.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CE41375D24A18CE900201DC9 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CE6EE4B924CD71BC00672426 /* AboutAppView.swift */,
-				CE41375E24A18CE900201DC9 /* Info.plist */,
-				CE1F468524CD81F200384202 /* AboutAppViewController.swift */,
-				CE1F468B24CDB6E200384202 /* Settings.bundle */,
-			);
-			path = iOS;
 			sourceTree = "<group>";
 		};
 		CE41376424A18CE900201DC9 /* macOS */ = {
@@ -298,7 +305,6 @@
 			isa = PBXGroup;
 			children = (
 				CE41375324A18CE700201DC9 /* Shared */,
-				CE41375D24A18CE900201DC9 /* iOS */,
 				CE41376424A18CE900201DC9 /* macOS */,
 				CE41376E24A18CE900201DC9 /* Tests iOS */,
 				CE41377924A18CE900201DC9 /* Tests macOS */,
@@ -333,12 +339,90 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		CE9AD82124CDED5B0049E434 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AD82224CDED5B0049E434 /* IdolBirthdayTests.swift */,
+				CE9AD82424CDED5B0049E434 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CE9AD82C24CDED5B0049E434 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AD82D24CDED5B0049E434 /* IdolBirthdayUITests.swift */,
+				CE9AD82F24CDED5B0049E434 /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		CE9AD83924CDED660049E434 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AD83A24CDED760049E434 /* App */,
+				CE9AD82124CDED5B0049E434 /* Tests */,
+				CE9AD82C24CDED5B0049E434 /* UITests */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		CE9AD83A24CDED760049E434 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AD84624CDF8C90049E434 /* Extensions */,
+				CE9AD83D24CDEE040049E434 /* Delegate */,
+				CE9AD84124CDF20F0049E434 /* ViewControllers */,
+				CE9AD83C24CDEDFA0049E434 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE9AD83C24CDEDFA0049E434 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AD81124CDED5B0049E434 /* Assets.xcassets */,
+				CE9AD81624CDED5B0049E434 /* LaunchScreen.storyboard */,
+				CE9AD81924CDED5B0049E434 /* Info.plist */,
+				CE9AD84C24CE01520049E434 /* IdolBirthday.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE9AD83D24CDEE040049E434 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AD80B24CDED590049E434 /* AppDelegate.swift */,
+				CE9AD80D24CDED590049E434 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		CE9AD84124CDF20F0049E434 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AD84224CDF2730049E434 /* RootViewController.swift */,
+				CE9AD84424CDF7E00049E434 /* IdolListViewController.swift */,
+				CE9AD84A24CDFF6B0049E434 /* IdolViewController.swift */,
+				CE1F468524CD81F200384202 /* AboutAppViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE9AD84624CDF8C90049E434 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AD84724CDF8E90049E434 /* UITableViewDiffableDataSource+plainSnapshot.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE41375A24A18CE900201DC9 /* iOS */ = {
+		CE41375A24A18CE900201DC9 /* App iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE41378524A18CE900201DC9 /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildConfigurationList = CE41378524A18CE900201DC9 /* Build configuration list for PBXNativeTarget "App iOS" */;
 			buildPhases = (
 				CE1F468A24CDB6B000384202 /* ShellScript */,
 				CE41375724A18CE900201DC9 /* Sources */,
@@ -352,7 +436,7 @@
 			dependencies = (
 				CE4137A524A18DB400201DC9 /* PBXTargetDependency */,
 			);
-			name = iOS;
+			name = "App iOS";
 			packageProductDependencies = (
 				CE6EE4A924CD5D4000672426 /* Backend */,
 			);
@@ -360,9 +444,9 @@
 			productReference = CE41375B24A18CE900201DC9 /* IdolBirthday.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE41376224A18CE900201DC9 /* macOS */ = {
+		CE41376224A18CE900201DC9 /* App macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE41378824A18CE900201DC9 /* Build configuration list for PBXNativeTarget "macOS" */;
+			buildConfigurationList = CE41378824A18CE900201DC9 /* Build configuration list for PBXNativeTarget "App macOS" */;
 			buildPhases = (
 				CE41375F24A18CE900201DC9 /* Sources */,
 				CE41376024A18CE900201DC9 /* Frameworks */,
@@ -375,7 +459,7 @@
 			dependencies = (
 				CE50988824A4808200D6A948 /* PBXTargetDependency */,
 			);
-			name = macOS;
+			name = "App macOS";
 			packageProductDependencies = (
 				CE6EE4AB24CD5D4C00672426 /* Backend */,
 			);
@@ -419,9 +503,9 @@
 			productReference = CE41377624A18CE900201DC9 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		CE41379424A18DB200201DC9 /* IdolBirthdayWidgetExtension iOS */ = {
+		CE41379424A18DB200201DC9 /* Widget iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE4137A724A18DB400201DC9 /* Build configuration list for PBXNativeTarget "IdolBirthdayWidgetExtension iOS" */;
+			buildConfigurationList = CE4137A724A18DB400201DC9 /* Build configuration list for PBXNativeTarget "Widget iOS" */;
 			buildPhases = (
 				CE41379124A18DB200201DC9 /* Sources */,
 				CE41379224A18DB200201DC9 /* Frameworks */,
@@ -431,7 +515,7 @@
 			);
 			dependencies = (
 			);
-			name = "IdolBirthdayWidgetExtension iOS";
+			name = "Widget iOS";
 			packageProductDependencies = (
 				CE6EE4AD24CD5D6700672426 /* Backend */,
 			);
@@ -439,9 +523,9 @@
 			productReference = CE41379524A18DB200201DC9 /* IdolBirthdayWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		CE50987924A4808000D6A948 /* IdolBirthdayWidgetExtension macOS */ = {
+		CE50987924A4808000D6A948 /* Widget macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE50988A24A4808200D6A948 /* Build configuration list for PBXNativeTarget "IdolBirthdayWidgetExtension macOS" */;
+			buildConfigurationList = CE50988A24A4808200D6A948 /* Build configuration list for PBXNativeTarget "Widget macOS" */;
 			buildPhases = (
 				CE50987624A4808000D6A948 /* Sources */,
 				CE50987724A4808000D6A948 /* Frameworks */,
@@ -451,7 +535,7 @@
 			);
 			dependencies = (
 			);
-			name = "IdolBirthdayWidgetExtension macOS";
+			name = "Widget macOS";
 			packageProductDependencies = (
 				CE6EE4AF24CD5D6B00672426 /* Backend */,
 			);
@@ -505,12 +589,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE41375A24A18CE900201DC9 /* iOS */,
-				CE41376224A18CE900201DC9 /* macOS */,
+				CE41375A24A18CE900201DC9 /* App iOS */,
+				CE41376224A18CE900201DC9 /* App macOS */,
 				CE41376A24A18CE900201DC9 /* Tests iOS */,
 				CE41377524A18CE900201DC9 /* Tests macOS */,
-				CE41379424A18DB200201DC9 /* IdolBirthdayWidgetExtension iOS */,
-				CE50987924A4808000D6A948 /* IdolBirthdayWidgetExtension macOS */,
+				CE41379424A18DB200201DC9 /* Widget iOS */,
+				CE50987924A4808000D6A948 /* Widget macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -520,8 +604,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1F468C24CDB6E200384202 /* Settings.bundle in Resources */,
-				CE41378124A18CE900201DC9 /* Assets.xcassets in Resources */,
+				CE9AD84024CDF16E0049E434 /* Assets.xcassets in Resources */,
+				CE9025C824CE12D100754A49 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,12 +674,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6EE4BA24CD71BC00672426 /* AboutAppView.swift in Sources */,
-				CE41377F24A18CE900201DC9 /* ContentView.swift in Sources */,
-				CE1F468624CD81F200384202 /* AboutAppViewController.swift in Sources */,
-				CE4137A324A18DB400201DC9 /* IdolBirthdayWidget.intentdefinition in Sources */,
-				CE41377D24A18CE900201DC9 /* IdolBirthdayApp.swift in Sources */,
-				CE6EE4BD24CD77E400672426 /* IdolList.swift in Sources */,
+				CE9AD84B24CDFF6B0049E434 /* IdolViewController.swift in Sources */,
+				CE9AD84824CDF8E90049E434 /* UITableViewDiffableDataSource+plainSnapshot.swift in Sources */,
+				CE9AD83F24CDF1670049E434 /* AppDelegate.swift in Sources */,
+				CE9AD84924CDFE760049E434 /* AboutAppViewController.swift in Sources */,
+				CE9AD83E24CDF1670049E434 /* SceneDelegate.swift in Sources */,
+				CE9AD84524CDF7E00049E434 /* IdolListViewController.swift in Sources */,
+				CE9AD84324CDF2730049E434 /* RootViewController.swift in Sources */,
+				CE9AD84E24CE103E0049E434 /* IdolBirthdayWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,25 +735,36 @@
 /* Begin PBXTargetDependency section */
 		CE41376D24A18CE900201DC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE41375A24A18CE900201DC9 /* iOS */;
+			target = CE41375A24A18CE900201DC9 /* App iOS */;
 			targetProxy = CE41376C24A18CE900201DC9 /* PBXContainerItemProxy */;
 		};
 		CE41377824A18CE900201DC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE41376224A18CE900201DC9 /* macOS */;
+			target = CE41376224A18CE900201DC9 /* App macOS */;
 			targetProxy = CE41377724A18CE900201DC9 /* PBXContainerItemProxy */;
 		};
 		CE4137A524A18DB400201DC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE41379424A18DB200201DC9 /* IdolBirthdayWidgetExtension iOS */;
+			target = CE41379424A18DB200201DC9 /* Widget iOS */;
 			targetProxy = CE4137A424A18DB400201DC9 /* PBXContainerItemProxy */;
 		};
 		CE50988824A4808200D6A948 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE50987924A4808000D6A948 /* IdolBirthdayWidgetExtension macOS */;
+			target = CE50987924A4808000D6A948 /* Widget macOS */;
 			targetProxy = CE50988724A4808200D6A948 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE9AD81624CDED5B0049E434 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9AD81724CDED5B0049E434 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE41378324A18CE900201DC9 /* Debug */ = {
@@ -787,18 +884,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOS/App/Resources/IdolBirthday.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4XKKKM86RN;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = App/iOS/Info.plist;
+				INFOPLIST_FILE = iOS/App/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthday;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.pronama.IdolBirthday;
 				PRODUCT_NAME = IdolBirthday;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -810,18 +909,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOS/App/Resources/IdolBirthday.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4XKKKM86RN;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = App/iOS/Info.plist;
+				INFOPLIST_FILE = iOS/App/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthday;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.pronama.IdolBirthday;
 				PRODUCT_NAME = IdolBirthday;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -845,7 +946,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthday;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.pronama.IdolBirthday;
 				PRODUCT_NAME = IdolBirthday;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -869,7 +970,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthday;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.pronama.IdolBirthday;
 				PRODUCT_NAME = IdolBirthday;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -966,6 +1067,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = IdolBirthdayWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4XKKKM86RN;
 				INFOPLIST_FILE = Widget/iOS/Info.plist;
@@ -975,10 +1077,11 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthday.IdolBirthdayWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.pronama.IdolBirthday.IdolBirthdayWidget;
 				PRODUCT_NAME = IdolBirthdayWidgetExtension;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -989,6 +1092,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = IdolBirthdayWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4XKKKM86RN;
 				INFOPLIST_FILE = Widget/iOS/Info.plist;
@@ -998,10 +1102,11 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthday.IdolBirthdayWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.pronama.IdolBirthday.IdolBirthdayWidget;
 				PRODUCT_NAME = IdolBirthdayWidgetExtension;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1024,7 +1129,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthday.IdolBirthdayWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.pronama.IdolBirthday.IdolBirthdayWidget;
 				PRODUCT_NAME = IdolBirthdayWidgetExtension;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1048,7 +1153,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.IdolBirthday.IdolBirthdayWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.pronama.IdolBirthday.IdolBirthdayWidget;
 				PRODUCT_NAME = IdolBirthdayWidgetExtension;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1068,7 +1173,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE41378524A18CE900201DC9 /* Build configuration list for PBXNativeTarget "iOS" */ = {
+		CE41378524A18CE900201DC9 /* Build configuration list for PBXNativeTarget "App iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE41378624A18CE900201DC9 /* Debug */,
@@ -1077,7 +1182,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE41378824A18CE900201DC9 /* Build configuration list for PBXNativeTarget "macOS" */ = {
+		CE41378824A18CE900201DC9 /* Build configuration list for PBXNativeTarget "App macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE41378924A18CE900201DC9 /* Debug */,
@@ -1104,7 +1209,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE4137A724A18DB400201DC9 /* Build configuration list for PBXNativeTarget "IdolBirthdayWidgetExtension iOS" */ = {
+		CE4137A724A18DB400201DC9 /* Build configuration list for PBXNativeTarget "Widget iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE4137A824A18DB400201DC9 /* Debug */,
@@ -1113,7 +1218,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE50988A24A4808200D6A948 /* Build configuration list for PBXNativeTarget "IdolBirthdayWidgetExtension macOS" */ = {
+		CE50988A24A4808200D6A948 /* Build configuration list for PBXNativeTarget "Widget macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE50988B24A4808200D6A948 /* Debug */,

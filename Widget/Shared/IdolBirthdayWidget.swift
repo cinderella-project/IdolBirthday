@@ -77,7 +77,7 @@ struct IdolView : View {
     
     var body: some View {
         HStack {
-            Text(idol.name).foregroundColor(idol.color)
+            Text(idol.name).foregroundColor(idol.color?.swiftuiColor)
             if showDate {
                 Spacer()
                 Text(String(format: "%02d月%02d日", idol.birthDate.month, idol.birthDate.day))

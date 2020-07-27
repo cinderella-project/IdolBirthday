@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE41375A24A18CE900201DC9"
+               BlueprintIdentifier = "CE41376224A18CE900201DC9"
                BuildableName = "IdolBirthday.app"
-               BlueprintName = "iOS"
+               BlueprintName = "App macOS"
                ReferencedContainer = "container:IdolBirthday.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE41376A24A18CE900201DC9"
-               BuildableName = "Tests iOS.xctest"
-               BlueprintName = "Tests iOS"
+               BlueprintIdentifier = "CE41377524A18CE900201DC9"
+               BuildableName = "Tests macOS.xctest"
+               BlueprintName = "Tests macOS"
                ReferencedContainer = "container:IdolBirthday.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CECEA22824A27C2A008E2070"
-               BuildableName = "IdolBirthdayBackendTests iOS.xctest"
-               BlueprintName = "IdolBirthdayBackendTests iOS"
+               BlueprintIdentifier = "CE50985124A476BD00D6A948"
+               BuildableName = "IdolBirthdayBackendTests macOS.xctest"
+               BlueprintName = "IdolBirthdayBackendTests macOS"
                ReferencedContainer = "container:IdolBirthday.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -64,9 +64,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE41375A24A18CE900201DC9"
+            BlueprintIdentifier = "CE41376224A18CE900201DC9"
             BuildableName = "IdolBirthday.app"
-            BlueprintName = "iOS"
+            BlueprintName = "App macOS"
             ReferencedContainer = "container:IdolBirthday.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,9 +81,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE41375A24A18CE900201DC9"
+            BlueprintIdentifier = "CE41376224A18CE900201DC9"
             BuildableName = "IdolBirthday.app"
-            BlueprintName = "iOS"
+            BlueprintName = "App macOS"
             ReferencedContainer = "container:IdolBirthday.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

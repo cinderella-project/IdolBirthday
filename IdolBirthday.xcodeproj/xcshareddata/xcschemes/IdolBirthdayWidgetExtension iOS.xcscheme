@@ -17,7 +17,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE41379424A18DB200201DC9"
                BuildableName = "IdolBirthdayWidgetExtension.appex"
-               BlueprintName = "IdolBirthdayWidgetExtension iOS"
+               BlueprintName = "Widget iOS"
                ReferencedContainer = "container:IdolBirthday.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,7 +31,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE41375A24A18CE900201DC9"
                BuildableName = "IdolBirthday.app"
-               BlueprintName = "iOS"
+               BlueprintName = "App iOS"
                ReferencedContainer = "container:IdolBirthday.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE41375A24A18CE900201DC9"
             BuildableName = "IdolBirthday.app"
-            BlueprintName = "iOS"
+            BlueprintName = "App iOS"
             ReferencedContainer = "container:IdolBirthday.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -98,7 +98,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE41375A24A18CE900201DC9"
             BuildableName = "IdolBirthday.app"
-            BlueprintName = "iOS"
+            BlueprintName = "App iOS"
             ReferencedContainer = "container:IdolBirthday.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
