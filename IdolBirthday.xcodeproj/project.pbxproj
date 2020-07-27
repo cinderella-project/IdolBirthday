@@ -38,7 +38,7 @@
 		CE9AD84524CDF7E00049E434 /* IdolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD84424CDF7E00049E434 /* IdolListViewController.swift */; };
 		CE9AD84824CDF8E90049E434 /* UITableViewDiffableDataSource+plainSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD84724CDF8E90049E434 /* UITableViewDiffableDataSource+plainSnapshot.swift */; };
 		CE9AD84924CDFE760049E434 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F468524CD81F200384202 /* AboutAppViewController.swift */; };
-		CE9AD84B24CDFF6B0049E434 /* IdolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD84A24CDFF6B0049E434 /* IdolViewController.swift */; };
+		CE9AD84B24CDFF6B0049E434 /* IdolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD84A24CDFF6B0049E434 /* IdolDetailViewController.swift */; };
 		CE9AD84E24CE103E0049E434 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
 /* End PBXBuildFile section */
 
@@ -158,7 +158,7 @@
 		CE9AD84224CDF2730049E434 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		CE9AD84424CDF7E00049E434 /* IdolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolListViewController.swift; sourceTree = "<group>"; };
 		CE9AD84724CDF8E90049E434 /* UITableViewDiffableDataSource+plainSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewDiffableDataSource+plainSnapshot.swift"; sourceTree = "<group>"; };
-		CE9AD84A24CDFF6B0049E434 /* IdolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolViewController.swift; sourceTree = "<group>"; };
+		CE9AD84A24CDFF6B0049E434 /* IdolDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailViewController.swift; sourceTree = "<group>"; };
 		CE9AD84C24CE01520049E434 /* IdolBirthday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IdolBirthday.entitlements; sourceTree = "<group>"; };
 		CE9AD84D24CE01520049E434 /* IdolBirthdayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IdolBirthdayWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -403,7 +403,7 @@
 			children = (
 				CE9AD84224CDF2730049E434 /* RootViewController.swift */,
 				CE9AD84424CDF7E00049E434 /* IdolListViewController.swift */,
-				CE9AD84A24CDFF6B0049E434 /* IdolViewController.swift */,
+				CE9AD84A24CDFF6B0049E434 /* IdolDetailViewController.swift */,
 				CE1F468524CD81F200384202 /* AboutAppViewController.swift */,
 			);
 			path = ViewControllers;
@@ -674,7 +674,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9AD84B24CDFF6B0049E434 /* IdolViewController.swift in Sources */,
+				CE9AD84B24CDFF6B0049E434 /* IdolDetailViewController.swift in Sources */,
 				CE9AD84824CDF8E90049E434 /* UITableViewDiffableDataSource+plainSnapshot.swift in Sources */,
 				CE9AD83F24CDF1670049E434 /* AppDelegate.swift in Sources */,
 				CE9AD84924CDFE760049E434 /* AboutAppViewController.swift in Sources */,

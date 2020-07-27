@@ -82,7 +82,7 @@ extension IdolListViewController: UITableViewDelegate {
         guard let item = dataSource.itemIdentifier(for: indexPath) else {
             return
         }
-        let vc = IdolViewController(idol: item)
+        let vc = IdolDetailViewController(idol: item)
         showDetailViewController(UINavigationController(rootViewController: vc), sender: self)
     }
 }

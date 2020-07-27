@@ -1,5 +1,5 @@
 //
-//  IdolViewController.swift
+//  IdolDetailViewController.swift
 //  App iOS
 //
 //  Created by user on 2020/07/27.
@@ -29,7 +29,7 @@ class ImageCell: UITableViewCell {
     }
 }
 
-class IdolViewController: UIViewController {
+class IdolDetailViewController: UIViewController {
     enum Section {
         case image
         case profile
