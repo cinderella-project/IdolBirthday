@@ -32,6 +32,7 @@
 		CE6EE4AE24CD5D6700672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AD24CD5D6700672426 /* Backend */; };
 		CE6EE4B024CD5D6B00672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AF24CD5D6B00672426 /* Backend */; };
 		CE6EE4BE24CD77E400672426 /* IdolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE4BC24CD77E400672426 /* IdolList.swift */; };
+		CE76602424CFEAD0007A3ABD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE76602324CFE9FA007A3ABD /* Settings.bundle */; };
 		CE9025C824CE12D100754A49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9AD81624CDED5B0049E434 /* LaunchScreen.storyboard */; };
 		CE9AD83E24CDF1670049E434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD80D24CDED590049E434 /* SceneDelegate.swift */; };
 		CE9AD83F24CDF1670049E434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD80B24CDED590049E434 /* AppDelegate.swift */; };
@@ -630,6 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9AD84024CDF16E0049E434 /* Assets.xcassets in Resources */,
+				CE76602424CFEAD0007A3ABD /* Settings.bundle in Resources */,
 				CE9025C824CE12D100754A49 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
