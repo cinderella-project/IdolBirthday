@@ -21,6 +21,7 @@ class IdolDetailViewController: UIViewController {
         case image
         case value(String, String)
         case twitterHashtag(String)
+        case twitterORSearch(String, [String])
     }
     
     typealias DataSource = UITableViewDiffableDataSource<Section, Item>
@@ -42,6 +43,12 @@ class IdolDetailViewController: UIViewController {
             cell.imageView?.image = UIImage(systemName: "magnifyingglass")
             cell.textLabel?.text = "#\(tag)"
             cell.textLabel?.textColor = cell.tintColor
+            cell.accessoryType = .disclosureIndicator
+        case .twitterORSearch(let description, let tags):
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+            cell.imageView?.image = UIImage(systemName: "magnifyingglass")
+            cell.textLabel?.text = description
+            cell.detailTextLabel?.text = tags.map { "#\($0)" }.joined(separator: ", ")
             cell.accessoryType = .disclosureIndicator
         }
         return cell
@@ -85,20 +92,20 @@ class IdolDetailViewController: UIViewController {
         snapshot.appendSections([.explore])
         let idolNameForHashtag = idol.name
             .replacingAll(matching: "=", with: "") // アスラン=BBⅡ世 はイコールがハッシュタグにならないので慣用的にイコール抜きのハッシュタグが使われている
-        let yearTagsPattern = ["\(idolNameForHashtag)生誕祭", "\(idolNameForHashtag)誕生祭"]
         let currentYear = Calendar(identifier: .gregorian).component(.year, from: Date())
-        snapshot.appendItems([
-            .twitterHashtag("\(idol.birthDate.month)月\(idol.birthDate.day)日は\(idolNameForHashtag)の誕生日"),
-        ])
-        snapshot.appendItems(yearTagsPattern.map { .twitterHashtag("\($0)\(currentYear)") })
-        snapshot.appendItems([
-            .twitterHashtag("\(idolNameForHashtag)生誕祭"),
-            .twitterHashtag("\(idolNameForHashtag)誕生祭"),
-            .twitterHashtag("\(idolNameForHashtag)誕生日")
-        ])
+        let yearTagsPattern = ["\(idolNameForHashtag)生誕祭", "\(idolNameForHashtag)誕生祭"]
+        let sameEveryYearTags = [
+            "\(idol.birthDate.month)月\(idol.birthDate.day)日は\(idolNameForHashtag)の誕生日",
+            "\(idolNameForHashtag)生誕祭",
+            "\(idolNameForHashtag)誕生祭",
+            "\(idolNameForHashtag)誕生日",
+        ]
         
-        snapshot.appendSections([.exploreLastBirthDay])
-        snapshot.appendItems(yearTagsPattern.map { .twitterHashtag("\($0)\(currentYear-1)") })
+        snapshot.appendItems([.twitterORSearch("Twitterで検索", [
+            yearTagsPattern.map { "\($0)\(currentYear)" },
+            sameEveryYearTags,
+            yearTagsPattern.map { "\($0)\(currentYear-1)" },
+        ].flatMap { $0 })])
 
         dataSource.apply(snapshot, animatingDifferences: false)
     }
@@ -125,7 +132,7 @@ extension IdolDetailViewController: UITableViewDelegate {
                 print(elements)
                 return UIMenu(title: "", image: nil, identifier: nil, options: [], children: elements)
             })
-        case .value(_, _), .twitterHashtag(_):
+        case .value(_, _), .twitterHashtag(_), .twitterORSearch(_, _):
             return nil
         }
     }
@@ -141,7 +148,7 @@ extension IdolDetailViewController: UITableViewDelegate {
             return false
         }
         switch item {
-        case .image, .twitterHashtag(_):
+        case .image, .twitterHashtag(_), .twitterORSearch(_, _):
             return true
         case .value(_, _):
             return false
@@ -164,6 +171,17 @@ extension IdolDetailViewController: UITableViewDelegate {
                     return
                 }
                 let url = URL(string: "https://twitter.com/hashtag/\(encodedTag)")!
+                self.present(SFSafariViewController(url: url), animated: true, completion: nil)
+            }
+        case .twitterORSearch(_, let tags):
+            let query = tags.map { "#\($0)" }.joined(separator: " OR ")
+            let encodedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+            let url = URL(string: "twitter://search?query=\(encodedQuery)")!
+            UIApplication.shared.open(url, options: [:]) { result in
+                guard !result else {
+                    return
+                }
+                let url = URL(string: "https://twitter.com/search?q=\(encodedQuery)")!
                 self.present(SFSafariViewController(url: url), animated: true, completion: nil)
             }
         case .value(_, _):
