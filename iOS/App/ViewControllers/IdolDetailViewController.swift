@@ -13,11 +13,14 @@ class IdolDetailViewController: UIViewController {
     enum Section {
         case image
         case profile
+        case explore
+        case exploreLastBirthDay
     }
     
     enum Item: Hashable {
         case image
         case value(String, String)
+        case twitterHashtag(String)
     }
     
     typealias DataSource = UITableViewDiffableDataSource<Section, Item>
@@ -34,6 +37,12 @@ class IdolDetailViewController: UIViewController {
             cell = UITableViewCell(style: .value1, reuseIdentifier: nil)
             cell.textLabel?.text = title
             cell.detailTextLabel?.text = value
+        case .twitterHashtag(let tag):
+            cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+            cell.imageView?.image = UIImage(systemName: "magnifyingglass")
+            cell.textLabel?.text = "#\(tag)"
+            cell.textLabel?.textColor = cell.tintColor
+            cell.accessoryType = .disclosureIndicator
         }
         return cell
     }
@@ -66,10 +75,31 @@ class IdolDetailViewController: UIViewController {
         tableView.dataSource = dataSource
         tableView.delegate = self
         var snapshot = dataSource.snapshot()
+
         snapshot.appendSections([.image])
         snapshot.appendItems([.image])
+
         snapshot.appendSections([.profile])
         snapshot.appendItems([.value("誕生日", "\(idol.birthDate.month)月\(idol.birthDate.day)日")])
+
+        snapshot.appendSections([.explore])
+        let idolNameForHashtag = idol.name
+            .replacingAll(matching: "=", with: "") // アスラン=BBⅡ世 はイコールがハッシュタグにならないので慣用的にイコール抜きのハッシュタグが使われている
+        let yearTagsPattern = ["\(idolNameForHashtag)生誕祭", "\(idolNameForHashtag)誕生祭"]
+        let currentYear = Calendar(identifier: .gregorian).component(.year, from: Date())
+        snapshot.appendItems([
+            .twitterHashtag("\(idol.birthDate.month)月\(idol.birthDate.day)日は\(idolNameForHashtag)の誕生日"),
+        ])
+        snapshot.appendItems(yearTagsPattern.map { .twitterHashtag("\($0)\(currentYear)") })
+        snapshot.appendItems([
+            .twitterHashtag("\(idolNameForHashtag)生誕祭"),
+            .twitterHashtag("\(idolNameForHashtag)誕生祭"),
+            .twitterHashtag("\(idolNameForHashtag)誕生日")
+        ])
+        
+        snapshot.appendSections([.exploreLastBirthDay])
+        snapshot.appendItems(yearTagsPattern.map { .twitterHashtag("\($0)\(currentYear-1)") })
+
         dataSource.apply(snapshot, animatingDifferences: false)
     }
     
@@ -95,7 +125,7 @@ extension IdolDetailViewController: UITableViewDelegate {
                 print(elements)
                 return UIMenu(title: "", image: nil, identifier: nil, options: [], children: elements)
             })
-        case .value(_, _):
+        case .value(_, _), .twitterHashtag(_):
             return nil
         }
     }
@@ -111,7 +141,7 @@ extension IdolDetailViewController: UITableViewDelegate {
             return false
         }
         switch item {
-        case .image:
+        case .image, .twitterHashtag(_):
             return true
         case .value(_, _):
             return false
@@ -126,6 +156,16 @@ extension IdolDetailViewController: UITableViewDelegate {
         case .image:
             let vc = SFSafariViewController(url: idol.idolListURL!)
             present(vc, animated: true, completion: nil)
+        case .twitterHashtag(let tag):
+            let encodedTag = tag.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
+            let url = URL(string: "twitter://hashtag/\(encodedTag)")!
+            UIApplication.shared.open(url, options: [:]) { result in
+                guard !result else {
+                    return
+                }
+                let url = URL(string: "https://twitter.com/hashtag/\(encodedTag)")!
+                self.present(SFSafariViewController(url: url), animated: true, completion: nil)
+            }
         case .value(_, _):
             return
         }
