@@ -9,20 +9,21 @@ import UIKit
 import Backend
 
 class IdolListViewController: UIViewController {
-    enum Section {
-        case one
+    class DataSource: UITableViewDiffableDataSource<RDFBirthDate, Idol> {
+        override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+            let section = snapshot().sectionIdentifiers[section]
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .none
+            return formatter.string(from: section.next())
+        }
     }
-    typealias DataSource = UITableViewDiffableDataSource<Section, Idol>
 
     let tableView = UITableView(frame: .zero, style: .plain)
     lazy var dataSource = DataSource(tableView: tableView) { (tableView, indexPath, idol) -> UITableViewCell? in
         let cell = UITableViewCell(style: .value1, reuseIdentifier: nil)
         cell.textLabel?.text = idol.name
         cell.textLabel?.textColor = idol.color?.uiColor
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        cell.detailTextLabel?.text = formatter.string(from: idol.birthDate.next())
         cell.accessoryType = .disclosureIndicator
         return cell
     }
@@ -30,8 +31,14 @@ class IdolListViewController: UIViewController {
     var idols = [Idol]() {
         didSet {
             var snapshot = dataSource.plainSnapshot()
-            snapshot.appendSections([.one])
-            snapshot.appendItems(idols)
+            var lastBirthDate: RDFBirthDate!
+            for idol in idols {
+                if lastBirthDate != idol.birthDate {
+                    lastBirthDate = idol.birthDate
+                    snapshot.appendSections([lastBirthDate])
+                }
+                snapshot.appendItems([idol])
+            }
             dataSource.apply(snapshot)
         }
     }
