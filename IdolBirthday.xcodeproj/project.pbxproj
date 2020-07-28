@@ -25,6 +25,8 @@
 		CE50989024A481A500D6A948 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
 		CE50989124A481A900D6A948 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
 		CE50989224A481B500D6A948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE41379F24A18DB400201DC9 /* Assets.xcassets */; };
+		CE6A0F9824CF25D3000F49FA /* OGPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A0F9724CF25D3000F49FA /* OGPResult.swift */; };
+		CE6A0F9924CF3CF9000F49FA /* IdolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD84A24CDFF6B0049E434 /* IdolDetailViewController.swift */; };
 		CE6EE4AA24CD5D4000672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4A924CD5D4000672426 /* Backend */; };
 		CE6EE4AC24CD5D4C00672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AB24CD5D4C00672426 /* Backend */; };
 		CE6EE4AE24CD5D6700672426 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = CE6EE4AD24CD5D6700672426 /* Backend */; };
@@ -40,6 +42,7 @@
 		CE9AD84924CDFE760049E434 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F468524CD81F200384202 /* AboutAppViewController.swift */; };
 		CE9AD84B24CDFF6B0049E434 /* IdolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AD84A24CDFF6B0049E434 /* IdolDetailViewController.swift */; };
 		CE9AD84E24CE103E0049E434 /* IdolBirthdayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE41379E24A18DB300201DC9 /* IdolBirthdayWidget.intentdefinition */; };
+		CEA5047D24CEB87400CE2D50 /* OGPLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5047C24CEB87400CE2D50 /* OGPLinkTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +147,7 @@
 		CE50987A24A4808000D6A948 /* IdolBirthdayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IdolBirthdayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE50988324A4808200D6A948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE50988424A4808200D6A948 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CE6A0F9724CF25D3000F49FA /* OGPResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OGPResult.swift; sourceTree = "<group>"; };
 		CE6EE4A824CD5CC400672426 /* Backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Backend; sourceTree = "<group>"; };
 		CE6EE4BC24CD77E400672426 /* IdolList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolList.swift; sourceTree = "<group>"; };
 		CE9AD80B24CDED590049E434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 		CE9AD84A24CDFF6B0049E434 /* IdolDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailViewController.swift; sourceTree = "<group>"; };
 		CE9AD84C24CE01520049E434 /* IdolBirthday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IdolBirthday.entitlements; sourceTree = "<group>"; };
 		CE9AD84D24CE01520049E434 /* IdolBirthdayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IdolBirthdayWidgetExtension.entitlements; sourceTree = "<group>"; };
+		CEA5047C24CEB87400CE2D50 /* OGPLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OGPLinkTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +344,14 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		CE6A0F9624CF25C8000F49FA /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A0F9724CF25D3000F49FA /* OGPResult.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
 		CE9AD82124CDED5B0049E434 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,8 +383,10 @@
 		CE9AD83A24CDED760049E434 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CE6A0F9624CF25C8000F49FA /* Structs */,
 				CE9AD84624CDF8C90049E434 /* Extensions */,
 				CE9AD83D24CDEE040049E434 /* Delegate */,
+				CEA5047B24CEB83A00CE2D50 /* Views */,
 				CE9AD84124CDF20F0049E434 /* ViewControllers */,
 				CE9AD83C24CDEDFA0049E434 /* Resources */,
 			);
@@ -415,6 +430,14 @@
 				CE9AD84724CDF8E90049E434 /* UITableViewDiffableDataSource+plainSnapshot.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEA5047B24CEB83A00CE2D50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5047C24CEB87400CE2D50 /* OGPLinkTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -680,6 +703,8 @@
 				CE9AD84924CDFE760049E434 /* AboutAppViewController.swift in Sources */,
 				CE9AD83E24CDF1670049E434 /* SceneDelegate.swift in Sources */,
 				CE9AD84524CDF7E00049E434 /* IdolListViewController.swift in Sources */,
+				CEA5047D24CEB87400CE2D50 /* OGPLinkTableViewCell.swift in Sources */,
+				CE6A0F9824CF25D3000F49FA /* OGPResult.swift in Sources */,
 				CE9AD84324CDF2730049E434 /* RootViewController.swift in Sources */,
 				CE9AD84E24CE103E0049E434 /* IdolBirthdayWidget.intentdefinition in Sources */,
 			);
@@ -701,6 +726,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE41377024A18CE900201DC9 /* Tests_iOS.swift in Sources */,
+				CE6A0F9924CF3CF9000F49FA /* IdolDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -889,7 +915,7 @@
 				DEVELOPMENT_TEAM = 4XKKKM86RN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/App/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -914,7 +940,7 @@
 				DEVELOPMENT_TEAM = 4XKKKM86RN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/App/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

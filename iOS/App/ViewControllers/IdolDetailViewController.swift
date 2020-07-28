@@ -7,27 +7,7 @@
 
 import UIKit
 import Backend
-
-class ImageCell: UITableViewCell {
-    let mainImageView = UIImageView()
-    
-    init() {
-        super.init(style: .default, reuseIdentifier: nil)
-        mainImageView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(mainImageView)
-        NSLayoutConstraint.activate([
-            mainImageView.heightAnchor.constraint(equalTo: mainImageView.widthAnchor, multiplier: 9 / 16.0),
-            mainImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            mainImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            mainImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            mainImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-        ])
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
+import SafariServices
 
 class IdolDetailViewController: UIViewController {
     enum Section {
@@ -49,18 +29,7 @@ class IdolDetailViewController: UIViewController {
         let cell: UITableViewCell
         switch item {
         case .image:
-            cell = ImageCell()
-            let label = UILabel()
-            label.translatesAutoresizingMaskIntoConstraints = false
-            label.text = "TODO: ここにアイドル名鑑のOGPを置く"
-            label.sizeToFit()
-            cell.addSubview(label)
-            NSLayoutConstraint.activate([
-                label.centerXAnchor.constraint(equalTo: cell.centerXAnchor),
-                label.centerYAnchor.constraint(equalTo: cell.centerYAnchor),
-            ])
-            cell.setNeedsLayout()
-            cell.layoutIfNeeded()
+            cell = OGPLinkTableViewCell(url: self.idol.idolListURL!)
         case .value(let title, let value):
             cell = UITableViewCell(style: .value1, reuseIdentifier: nil)
             cell.textLabel?.text = title
@@ -68,6 +37,7 @@ class IdolDetailViewController: UIViewController {
         }
         return cell
     }
+    lazy var safariVC = SFSafariViewController(url: idol.idolListURL!)
 
     init(idol: Idol) {
         self.idol = idol
@@ -94,6 +64,7 @@ class IdolDetailViewController: UIViewController {
             )
         }
         tableView.dataSource = dataSource
+        tableView.delegate = self
         var snapshot = dataSource.snapshot()
         snapshot.appendSections([.image])
         snapshot.appendItems([.image])
@@ -108,5 +79,55 @@ class IdolDetailViewController: UIViewController {
         ], applicationActivities: nil)
         activityVC.popoverPresentationController?.barButtonItem = sender
         present(activityVC, animated: true, completion: nil)
+    }
+}
+
+extension IdolDetailViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        guard let item = dataSource.itemIdentifier(for: indexPath) else {
+            return nil
+        }
+        switch item {
+        case .image:
+            return .init(identifier: nil, previewProvider: { [self] () -> UIViewController? in
+                return self.safariVC
+            }, actionProvider: { elements in
+                print(elements)
+                return UIMenu(title: "", image: nil, identifier: nil, options: [], children: elements)
+            })
+        case .value(_, _):
+            return nil
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: UIContextMenuInteractionCommitAnimating) {
+        animator.addAnimations {
+            self.present(self.safariVC, animated: true, completion: nil)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        guard let item = dataSource.itemIdentifier(for: indexPath) else {
+            return false
+        }
+        switch item {
+        case .image:
+            return true
+        case .value(_, _):
+            return false
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let item = dataSource.itemIdentifier(for: indexPath) else {
+            return
+        }
+        switch item {
+        case .image:
+            let vc = SFSafariViewController(url: idol.idolListURL!)
+            present(vc, animated: true, completion: nil)
+        case .value(_, _):
+            return
+        }
     }
 }
