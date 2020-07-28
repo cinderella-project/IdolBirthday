@@ -150,6 +150,7 @@
 		CE6A0F9724CF25D3000F49FA /* OGPResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OGPResult.swift; sourceTree = "<group>"; };
 		CE6EE4A824CD5CC400672426 /* Backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Backend; sourceTree = "<group>"; };
 		CE6EE4BC24CD77E400672426 /* IdolList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolList.swift; sourceTree = "<group>"; };
+		CE76602324CFE9FA007A3ABD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CE9AD80B24CDED590049E434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9AD80D24CDED590049E434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE9AD81124CDED5B0049E434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -396,6 +397,7 @@
 		CE9AD83C24CDEDFA0049E434 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE76602324CFE9FA007A3ABD /* Settings.bundle */,
 				CE9AD81124CDED5B0049E434 /* Assets.xcassets */,
 				CE9AD81624CDED5B0049E434 /* LaunchScreen.storyboard */,
 				CE9AD81924CDED5B0049E434 /* Info.plist */,
@@ -688,7 +690,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nmint run mono0926/LicensePlist --output-path App/iOS/Settings.bundle\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nmint run mono0926/LicensePlist --output-path iOS/App/Settings.bundle\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
