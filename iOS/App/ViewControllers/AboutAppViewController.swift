@@ -64,6 +64,7 @@ class AboutAppViewController: UIViewController {
         }
         snapshot.appendSections([.dataProvider])
         snapshot.appendItems([.link("im@sparql (アイドルのデータ)", URL(string: "https://sparql.crssnky.xyz/imas/")!)])
+        snapshot.appendItems([.link("summaly-etag (OGP情報)", URL(string: "https://summaly-etag.vercel.app/")!)])
         // todo
         dataSource.apply(snapshot)
     }
