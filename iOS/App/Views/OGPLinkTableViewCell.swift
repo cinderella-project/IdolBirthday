@@ -46,7 +46,7 @@ class OGPLinkTableViewCell: UITableViewCell {
                     return
                 }
                 var req = ImageRequest(url: url)
-                req.urlRequest.setValue("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0", forHTTPHeaderField: "User-Agent")
+                req.urlRequest.setValue("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:79.0) Gecko/20100101 Firefox/79.0", forHTTPHeaderField: "User-Agent")
                 DispatchQueue.main.async {
                     let options = ImageLoadingOptions(transition: .fadeIn(duration: 0.1))
                     Nuke.loadImage(with: req, options: options, into: self.mainImageView)
