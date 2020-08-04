@@ -11,7 +11,20 @@ import Intents
 import Backend
 
 struct Provider: IntentTimelineProvider {
-    public func snapshot(for configuration: ConfigurationIntent, with context: Context, completion: @escaping (IdolBirthdaysInfo) -> ()) {
+    struct Entry: TimelineEntry {
+        enum Content {
+            case placeholder
+            case actualData(todayIdols: [Idol], idols: [Idol], configuration: ConfigurationIntent)
+        }
+        public let date: Date
+        public let content: Content
+    }
+    
+    public func placeholder(with: Context) -> Entry {
+        return .init(date: Date(), content: .placeholder)
+    }
+    
+    public func snapshot(for configuration: ConfigurationIntent, with context: Context, completion: @escaping (Entry) -> ()) {
         IdolManager.request(q: IdolManager.getAllIdolsQuery())
             .onSuccess { idols in
                 let date = Date()
@@ -38,11 +51,13 @@ struct Provider: IntentTimelineProvider {
                         comingSoonIdols.append(idol)
                     }
                 }
-                let entry = IdolBirthdaysInfo(
+                let entry = Entry(
                     date: date,
-                    todayIdols: todayIdols,
-                    idols: comingSoonIdols,
-                    configuration: configuration
+                    content: .actualData(
+                        todayIdols: todayIdols,
+                        idols: comingSoonIdols,
+                        configuration: configuration
+                    )
                 )
                 completion(entry)
             }
@@ -58,19 +73,6 @@ struct Provider: IntentTimelineProvider {
     }
 }
 
-struct IdolBirthdaysInfo: TimelineEntry {
-    public let date: Date
-    public let todayIdols: [Idol]
-    public let idols: [Idol]
-    public let configuration: ConfigurationIntent
-}
-
-struct PlaceholderView : View {
-    var body: some View {
-        Text("Loading...")
-    }
-}
-
 struct IdolView : View {
     var idol: Idol
     var showDate: Bool = true
@@ -80,7 +82,7 @@ struct IdolView : View {
             Text(idol.name).foregroundColor(idol.color?.swiftuiColor)
             if showDate {
                 Spacer()
-                Text(String(format: "%02d月%02d日", idol.birthDate.month, idol.birthDate.day))
+                Text(String(format: "%d月%d日", idol.birthDate.month, idol.birthDate.day))
                     .foregroundColor(.secondary)
             }
         }
@@ -92,30 +94,35 @@ struct IdolBirthdayWidgetEntryView : View {
 
     var body: some View {
         VStack {
-            if entry.todayIdols.count > 0 {
-                HStack {
-                    Text("Happy Birthday!")
-                    Spacer()
-                    Text(entry.date, style: .date)
-                }
-                ForEach(entry.todayIdols) {
-                    IdolView(idol: $0, showDate: false)
-                }
-                if entry.idols.count > 0 {
+            switch entry.content {
+            case .placeholder:
+                Text("Loading...")
+            case .actualData(let todayIdols, let idols, _):
+                if todayIdols.count > 0 {
+                    HStack {
+                        Text("Happy Birthday!")
+                        Spacer()
+                        Text(entry.date, style: .date)
+                    }
+                    ForEach(todayIdols) {
+                        IdolView(idol: $0, showDate: false)
+                    }
+                    if idols.count > 0 {
+                        HStack {
+                            Text("coming soon...")
+                            Spacer()
+                        }
+                    }
+                } else {
                     HStack {
                         Text("coming soon...")
                         Spacer()
+                        Text(entry.date, style: .date)
                     }
                 }
-            } else {
-                HStack {
-                    Text("coming soon...")
-                    Spacer()
-                    Text(entry.date, style: .date)
+                ForEach(idols) {
+                    IdolView(idol: $0)
                 }
-            }
-            ForEach(entry.idols) {
-                IdolView(idol: $0)
             }
         }.padding(8)
     }
@@ -126,7 +133,7 @@ struct IdolBirthdayWidget: Widget {
     private let kind: String = "IdolBirthdayWidget"
 
     public var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider(), placeholder: PlaceholderView()) { entry in
+        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             IdolBirthdayWidgetEntryView(entry: entry)
         }
         .supportedFamilies([.systemMedium])
