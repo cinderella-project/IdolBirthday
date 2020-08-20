@@ -137,7 +137,7 @@ struct IdolBirthdayWidget: Widget {
             IdolBirthdayWidgetEntryView(entry: entry)
         }
         .supportedFamilies([.systemMedium])
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Upcoming Birthdays")
+        .description("This widget shows upcoming birthdays of idols.")
     }
 }
