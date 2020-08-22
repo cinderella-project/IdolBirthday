@@ -7,6 +7,7 @@
 
 import UIKit
 import Backend
+import WidgetKit
 
 class IdolListViewController: UIViewController {
     class DataSource: UITableViewDiffableDataSource<RDFBirthDate, Idol> {
@@ -67,6 +68,7 @@ class IdolListViewController: UIViewController {
             .onSuccess { idols in
                 let idols = idols.sorted { $0.birthDate.next() < $1.birthDate.next() }
                 self.idols = idols
+                WidgetCenter.shared.reloadAllTimelines()
             }
             .onFailure { error in
                 let alert = UIAlertController(title: "Error", message: "\(error)", preferredStyle: .alert)
