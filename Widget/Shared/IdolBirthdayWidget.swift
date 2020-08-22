@@ -10,21 +10,36 @@ import SwiftUI
 import Intents
 import Backend
 
+
+func tomorrow(from today: Date) -> Date? {
+    guard let tomorrowWithHours = Calendar.current.date(byAdding: .day, value: 1, to: today) else {
+        return nil
+    }
+    var tomorrow = Calendar.current.dateComponents(in: .current, from: tomorrowWithHours)
+    tomorrow.hour = 0
+    tomorrow.minute = 0
+    tomorrow.second = 0
+    tomorrow.nanosecond = 0
+    return tomorrow.date
+}
+
 struct Provider: IntentTimelineProvider {
+    typealias Intent = ConfigurationIntent
+    
     struct Entry: TimelineEntry {
         enum Content {
             case placeholder
-            case actualData(todayIdols: [Idol], idols: [Idol], configuration: ConfigurationIntent)
+            case actualData(todayIdols: [Idol], idols: [Idol], configuration: Intent)
         }
-        public let date: Date
-        public let content: Content
+        let date: Date
+        let content: Content
     }
     
-    public func placeholder(with: Context) -> Entry {
+    func placeholder(in context: Context) -> Entry {
         return .init(date: Date(), content: .placeholder)
     }
     
-    public func snapshot(for configuration: ConfigurationIntent, with context: Context, completion: @escaping (Entry) -> ()) {
+    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Entry) -> Void) {
         IdolManager.request(q: IdolManager.getAllIdolsQuery())
             .onSuccess { idols in
                 let date = Date()
@@ -65,10 +80,14 @@ struct Provider: IntentTimelineProvider {
                 fatalError("\(error)")
             }
     }
-
-    public func timeline(for configuration: ConfigurationIntent, with context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        snapshot(for: configuration, with: context) { info in
-            completion(.init(entries: [info], policy: .atEnd))
+    
+    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
+        getSnapshot(for: configuration, in: context) { info in
+            if let tomorrow = tomorrow(from: info.date) {
+                completion(.init(entries: [info], policy: .after(tomorrow)))
+            } else {
+                completion(.init(entries: [info], policy: .atEnd))
+            }
         }
     }
 }
