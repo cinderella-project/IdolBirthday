@@ -143,7 +143,6 @@ struct IdolBirthdayWidgetEntryView : View {
                     IdolView(idol: $0)
                 }
             }
-            Text("更新から \(entry.date, style: .timer) が経過しました").frame(maxWidth: .infinity)
         }.padding(8)
     }
 }
