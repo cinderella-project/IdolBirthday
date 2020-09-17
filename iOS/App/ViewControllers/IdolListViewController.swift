@@ -68,7 +68,9 @@ class IdolListViewController: UIViewController {
             .onSuccess { idols in
                 let idols = idols.sorted { $0.birthDate.next() < $1.birthDate.next() }
                 self.idols = idols
-                WidgetCenter.shared.reloadAllTimelines()
+                if #available(macCatalyst 14.0, *) {
+                    WidgetCenter.shared.reloadAllTimelines()
+                }
             }
             .onFailure { error in
                 let alert = UIAlertController(title: "Error", message: "\(error)", preferredStyle: .alert)
