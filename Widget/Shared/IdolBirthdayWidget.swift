@@ -10,7 +10,6 @@ import SwiftUI
 import Intents
 import Backend
 
-
 func tomorrow(from today: Date) -> Date? {
     guard let tomorrowWithHours = Calendar.current.date(byAdding: .day, value: 1, to: today) else {
         return nil
@@ -92,16 +91,23 @@ struct Provider: IntentTimelineProvider {
     }
 }
 
+let dateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "ddMMM", options: 0, locale: Locale.current)
+    return formatter
+}()
+
 struct IdolView : View {
     var idol: Idol
     var showDate: Bool = true
+    var date: Date
     
     var body: some View {
         HStack {
             Text(idol.name).foregroundColor(idol.color?.swiftuiColor)
             if showDate {
                 Spacer()
-                Text(String(format: "%d月%d日", idol.birthDate.month, idol.birthDate.day))
+                Text("\(idol.birthDate.next(current: date), formatter: dateFormatter)")
                     .foregroundColor(.secondary)
             }
         }
@@ -121,10 +127,10 @@ struct IdolBirthdayWidgetEntryView : View {
                     HStack {
                         Text("Happy Birthday!")
                         Spacer()
-                        Text(entry.date, style: .date)
+                        Text("\(entry.date, formatter: dateFormatter)")
                     }
                     ForEach(todayIdols) {
-                        IdolView(idol: $0, showDate: false)
+                        IdolView(idol: $0, showDate: false, date: entry.date)
                     }
                     if idols.count > 0 {
                         HStack {
@@ -136,11 +142,11 @@ struct IdolBirthdayWidgetEntryView : View {
                     HStack {
                         Text("coming soon...")
                         Spacer()
-                        Text(entry.date, style: .date)
+                        Text("\(entry.date, formatter: dateFormatter)")
                     }
                 }
                 ForEach(idols) {
-                    IdolView(idol: $0)
+                    IdolView(idol: $0, date: entry.date)
                 }
             }
         }.padding(8)

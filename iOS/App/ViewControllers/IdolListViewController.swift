@@ -68,7 +68,7 @@ class IdolListViewController: UIViewController {
             .onSuccess { idols in
                 let idols = idols.sorted { $0.birthDate.next() < $1.birthDate.next() }
                 self.idols = idols
-                if #available(macCatalyst 14.0, *) {
+                if #available(iOS 14.0, *) {
                     WidgetCenter.shared.reloadAllTimelines()
                 }
             }
