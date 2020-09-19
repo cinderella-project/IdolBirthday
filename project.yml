@@ -49,11 +49,8 @@ targets:
     type: framework
     platform: [iOS, macOS]
     platformSuffix: " ${platform}"
-    info:
-      path: Backend/Sources/Backend/Info.plist
-      properties: {}
     sources:
-    - path: Backend/Sources/Backend
+    - path: Backend
   # --- Widget ---
   Widget:
     type: app-extension
