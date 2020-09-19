@@ -48,9 +48,9 @@ targets:
     - target: Widget macOS
   # --- Widget ---
   Widget:
-    name: "Widget ${platform}"
     type: app-extension
     platform: [iOS, macOS]
+    platformSuffix: " ${platform}"
     deploymentTarget:
       iOS: 14.0
     settings:
