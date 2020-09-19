@@ -16,7 +16,7 @@ struct IdolDetailView: View {
             ZStack {
                 Spacer().frame(height: 0)
                 Rectangle()
-                    .foregroundColor(Color(UIColor.secondarySystemBackground))
+//                    .foregroundColor(Color(UIColor.secondarySystemBackground))
                     .aspectRatio(16/9.0, contentMode: .fit)
             }
             .frame(maxWidth: .infinity)

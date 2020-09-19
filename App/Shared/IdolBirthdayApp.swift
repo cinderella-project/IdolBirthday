@@ -14,7 +14,7 @@ struct IdolBirthdayApp: App {
             NavigationView {
                 ContentView()
             }
-            .navigationViewStyle(StackNavigationViewStyle())
+//            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }

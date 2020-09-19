@@ -14,7 +14,7 @@ struct IdolList: View {
         List(idols) { idol in
             NavigationLink(destination: IdolDetailView(idol: idol)) {
                 HStack {
-                    Text(idol.name).foregroundColor(idol.color)
+                    Text(idol.name).foregroundColor(idol.color?.swiftuiColor)
                     Spacer()
                     Text(idol.birthDate.next(), style: .date)
                         .foregroundColor(.secondary)
