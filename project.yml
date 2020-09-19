@@ -4,6 +4,7 @@ options:
     iOS: 13.5
     macOS: 11.0
   createIntermediateGroups: true
+  postGenCommand: pod install
 settings:
   DEVELOPMENT_TEAM: 4XKKKM86RN
 settingGroups:
@@ -12,9 +13,6 @@ settingGroups:
   Catalyst-iOS:
     SUPPORTS_MACCATALYST: true
   Catalyst-macOS: {}
-packages:
-  Backend:
-    path: Backend
 targets:
   # --- App ---
   App iOS:
@@ -31,7 +29,7 @@ targets:
     sources:
     - path: iOS/App
     dependencies:
-    - package: Backend
+    - target: Backend iOS
     - target: Widget iOS
   App macOS:
     type: application
@@ -44,8 +42,18 @@ targets:
     - path: App/Shared
     - path: App/macOS
     dependencies:
-    - package: Backend
+    - target: Backend macOS
     - target: Widget macOS
+  # --- Backend ---
+  Backend:
+    type: framework
+    platform: [iOS, macOS]
+    platformSuffix: " ${platform}"
+    info:
+      path: Backend/Sources/Backend/Info.plist
+      properties: {}
+    sources:
+    - path: Backend/Sources/Backend
   # --- Widget ---
   Widget:
     type: app-extension
@@ -66,4 +74,4 @@ targets:
     - path: Widget/Shared
     - path: Widget/${platform}
     dependencies:
-    - package: Backend
+    - target: Backend ${platform}

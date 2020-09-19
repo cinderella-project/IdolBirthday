@@ -1,0 +1,37 @@
+PODS:
+  - BrightFutures (8.0.0)
+  - FootlessParser (0.5.2)
+  - Nuke (9.1.2)
+  - STRegex (2.1.1)
+  - SwiftSparql (0.8.0):
+    - SwiftSparql/BrightFutures (= 0.8.0)
+    - SwiftSparql/Core (= 0.8.0)
+  - SwiftSparql/BrightFutures (0.8.0):
+    - BrightFutures (~> 8.0)
+    - SwiftSparql/Core
+  - SwiftSparql/Core (0.8.0):
+    - FootlessParser (~> 0.5)
+
+DEPENDENCIES:
+  - Nuke
+  - STRegex
+  - SwiftSparql
+
+SPEC REPOS:
+  trunk:
+    - BrightFutures
+    - FootlessParser
+    - Nuke
+    - STRegex
+    - SwiftSparql
+
+SPEC CHECKSUMS:
+  BrightFutures: f8427b46feabaf73c5e71ace7d86d65dfbb47696
+  FootlessParser: 521916d592fa6cba06cfca6f4b5d4f5a2d49175a
+  Nuke: dd2e6be6a34c042a7861e190632781d11f253026
+  STRegex: d49e88d0fe58538d3175fdd989bc1243b9be2a07
+  SwiftSparql: c675663371f067af1ee9e15b5859daded636ae50
+
+PODFILE CHECKSUM: 322aee90e8025ac53716e929567baafcccc86fcf
+
+COCOAPODS: 1.9.3
