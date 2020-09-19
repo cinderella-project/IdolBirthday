@@ -49,6 +49,8 @@ targets:
     type: framework
     platform: [iOS, macOS]
     platformSuffix: " ${platform}"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: jp.pronama.IdolBirthday.Backend
     sources:
     - path: Backend
   # --- Widget ---
