@@ -7,12 +7,15 @@ options:
   postGenCommand: pod install
 settings:
   DEVELOPMENT_TEAM: 4XKKKM86RN
+  VERSIONING_SYSTEM: Apple Generic
 settingGroups:
   # Catalyst-${platform} で参照する
   # これをやらないと macOS ターゲットなのに Catalyst の設定が出てくることがある気がする (要検証)
   Catalyst-iOS:
     SUPPORTS_MACCATALYST: true
   Catalyst-macOS: {}
+  Framework:
+    CURRENT_PROJECT_VERSION: ${REPLACE_WITH_ACTUAL_CURRENT_PROJECT_VERSION}
 targets:
   # --- App ---
   App iOS:
@@ -50,7 +53,10 @@ targets:
     platform: [iOS, macOS]
     platformSuffix: " ${platform}"
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: jp.pronama.IdolBirthday.Backend
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: jp.pronama.IdolBirthday.Backend
+      groups:
+      - Framework
     sources:
     - path: Backend
   # --- Widget ---
