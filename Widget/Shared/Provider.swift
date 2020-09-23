@@ -31,7 +31,7 @@ struct Provider: IntentTimelineProvider {
         }
         var todayIdols = [Idol]()
         var comingSoonIdols = [Idol]()
-        var maxIdolCount = 4
+        var maxIdolCount = 5
         var todayIdolsFinished = true
         while maxIdolCount > 0 {
             let idol = sortedIdols.removeFirst()
