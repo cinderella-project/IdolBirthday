@@ -14,6 +14,13 @@ public struct Idol: Decodable, Hashable {
     public var idolListURL: URL?
     public var color: EightBitColor?
     
+    public init(name: String, birthDate: RDFBirthDate, idolListURL: URL? = nil, color: EightBitColor? = nil) {
+        self.name = name
+        self.birthDate = birthDate
+        self.idolListURL = idolListURL
+        self.color = color
+    }
+    
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)

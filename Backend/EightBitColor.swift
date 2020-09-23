@@ -17,7 +17,7 @@ public struct EightBitColor: Hashable {
     var g: UInt8
     var b: UInt8
     
-    init?(hex: String) {
+    public init?(hex: String) {
         guard let rgb = Int(hex, radix: 16) else {
             return nil
         }
