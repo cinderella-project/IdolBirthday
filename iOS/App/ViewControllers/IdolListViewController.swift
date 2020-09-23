@@ -23,8 +23,9 @@ class IdolListViewController: UIViewController {
     let tableView = UITableView(frame: .zero, style: .plain)
     lazy var dataSource = DataSource(tableView: tableView) { (tableView, indexPath, idol) -> UITableViewCell? in
         let cell = UITableViewCell(style: .value1, reuseIdentifier: nil)
+        let idolColor = idol.color?.uiColor
         cell.textLabel?.text = idol.name
-        cell.textLabel?.textColor = idol.color?.uiColor
+        cell.backgroundColor = idolColor?.withAlphaComponent(0.2)
         cell.accessoryType = .disclosureIndicator
         return cell
     }
