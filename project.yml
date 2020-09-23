@@ -53,10 +53,7 @@ targets:
     platform: [iOS, macOS]
     platformSuffix: " ${platform}"
     settings:
-      base:
-        PRODUCT_BUNDLE_IDENTIFIER: jp.pronama.IdolBirthday.Backend
-      groups:
-      - Framework
+      PRODUCT_BUNDLE_IDENTIFIER: jp.pronama.IdolBirthday.Backend
     sources:
     - path: Backend
   # --- Widget ---
